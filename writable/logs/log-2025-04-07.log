@@ -1,0 +1,82 @@
+CRITICAL - 2025-04-07 08:27:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/admin-footer.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/admin-footer.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('partials/admin-footer', null, true)
+ 3 APPPATH\Views\layouts\admin_base.php(38): CodeIgniter\View\View->include('partials/admin-footer')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\layouts\\admin_base.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/admin_base', [], true)
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 8 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-07 08:42:40 --> ErrorException: include(./navbar/navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/admin-dashboard/]
+in APPPATH\Views\admin\candidates_view.php on line 2.
+ 1 APPPATH\Views\admin\candidates_view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(./navbar/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php', 2)
+ 2 APPPATH\Views\admin\candidates_view.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/candidates_view', [], true)
+ 6 APPPATH\Controllers\Home.php(19): view('admin/candidates_view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-07 08:44:42 --> ErrorException: include_once(model/database.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/admin-dashboard/]
+in APPPATH\Views\admin\candidates_view.php on line 5.
+ 1 APPPATH\Views\admin\candidates_view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(model/database.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php', 5)
+ 2 APPPATH\Views\admin\candidates_view.php(5): include_once()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/candidates_view', [], true)
+ 6 APPPATH\Controllers\Home.php(19): view('admin/candidates_view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-07 08:44:52 --> ErrorException: include_once(model/database.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/admin-dashboard/]
+in APPPATH\Views\admin\candidates_view.php on line 5.
+ 1 APPPATH\Views\admin\candidates_view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(model/database.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php', 5)
+ 2 APPPATH\Views\admin\candidates_view.php(5): include_once()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/candidates_view', [], true)
+ 6 APPPATH\Controllers\Home.php(19): view('admin/candidates_view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-07 08:45:20 --> ErrorException: include_once(model/database.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/admin-dashboard/]
+in APPPATH\Views\admin\candidates_view.php on line 5.
+ 1 APPPATH\Views\admin\candidates_view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(model/database.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php', 5)
+ 2 APPPATH\Views\admin\candidates_view.php(5): include_once()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\candidates_view.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/candidates_view', [], true)
+ 6 APPPATH\Controllers\Home.php(19): view('admin/candidates_view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
