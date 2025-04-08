@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\CandidatesModel;
+
+class AdminController extends BaseController
+{
+
+    public function admin(): string
+    {
+        return view('admin/admin');
+    }
+
+}

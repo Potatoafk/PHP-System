@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\CandidatesModel;
+
 class Home extends BaseController
 {
     public function index(): string
@@ -11,11 +13,15 @@ class Home extends BaseController
 
     public function admin(): string
     {
-        return view('admin/admin');
+        $model = new CandidatesModel();
+        $data['candidates'] = $model->findAll(); // fetch all candidates
+        return view('admin/admin', $data);
     }
 
     public function candidates(): string
-    {
-        return view('admin/candidates_view');
+    {   
+        $model = new CandidatesModel();
+        $data['candidates'] = $model->findAll(); // fetch all candidates
+        return view('admin/candidates_view', $data);
     }
 }

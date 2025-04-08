@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('/admin/admin-dashboard/')?>" class="nav-link">
+                            <a href="<?= base_url('/admin/candidates_view/')?>" class="nav-link">
                                 <p>Candidates</p>
                             </a>
                         </li>

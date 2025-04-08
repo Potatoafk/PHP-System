@@ -98,14 +98,23 @@
                                                 <thead>
                                                     <tr class="text-center">
                                                         <th>No.</th>
-                                                        <th> Candidate Name</th>
+                                                        <th>Candidate Name</th>
                                                         <th>Position</th>
                                                         <th>Party</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                  
+                                                    <?php foreach ($candidates as $candidate): ?>
+                                                        <tr class="text-center">
+                                                            <td><?= esc($candidate['ID']) ?></td>
+                                                            <td><?= esc($candidate['candidate_name']) ?></td>
+                                                            <td><?= esc($candidate['candidate_position']) ?></td>
+                                                            <td><?= esc($candidate['candidate_party']) ?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
                                                 </tbody>
+                                            </table>
+                                        </div>
                                             </table>
                                         </div>
                                     </div>

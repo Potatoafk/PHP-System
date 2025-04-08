@@ -1,0 +1,417 @@
+CRITICAL - 2025-04-08 15:48:09 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:50:12 --> ErrorException: Undefined variable $candidates
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidates', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:50:15 --> ErrorException: Undefined variable $candidates
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidates', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:52:53 --> ErrorException: Undefined variable $candidates
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidates', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:53:07 --> ErrorException: Undefined variable $candidates
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidates', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:53:33 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:53:40 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:54:49 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:54:55 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 15:55:05 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+ERROR - 2025-04-08 15:59:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'candidates', 3306, '', 0)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-08 15:59:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'candidates'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:00:46 --> ErrorException: Undefined variable $data
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 17.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Controllers\\Home.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+ERROR - 2025-04-08 16:00:54 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'candidates', 3306, '', 0)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-08 16:00:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'candidates'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+ERROR - 2025-04-08 16:02:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'candidates', 3306, '', 0)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'candidates' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\Home->admin()
+#7 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-08 16:02:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'candidates'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:02:44 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(19): view('admin/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:04:24 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(19): view('admin/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:06:56 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:21:46 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('admin/admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:26:06 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('admin/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:28:08 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 109.
+ 1 APPPATH\Views\admin\admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\admin\\admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('admin/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-08 16:30:28 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: /]
+in APPPATH\Views\admin\admin.php on line 127.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Home.php(18): view('admin/admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
