@@ -29,8 +29,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('/')?>" class="nav-link active">
-                                <!-- <i class="far fa-circle nav-icon"></i> -->
+                            <a href="<?= base_url('/admin_dashboard')?>" class="nav-link active">
                                 <p>Analytics</p>
                             </a>
                         </li>
@@ -41,7 +40,6 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="far fa-circle nav-icon"></i> -->
                                 <p>Audit Logs</p>
                             </a>
                         </li>
