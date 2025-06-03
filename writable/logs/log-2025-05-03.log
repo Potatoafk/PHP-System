@@ -1,0 +1,356 @@
+CRITICAL - 2025-05-03 12:19:49 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:37:42 --> ErrorException: Undefined variable $PRESIDENT
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PRESIDENT', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(37): view('user/voter_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:38:08 --> ErrorException: Undefined variable $PRESIDENT
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PRESIDENT', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(37): view('user/voter_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:42:39 --> TypeError: App\Models\CandidatesModel::getCandidatesByPosition(): Return value must be of type string, array returned
+[Method: GET, Route: voter_page]
+in APPPATH\Models\CandidatesModel.php on line 19.
+ 1 APPPATH\Controllers\User.php(21): App\Models\CandidatesModel->getCandidatesByPosition('vice-president')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:45:14 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CandidatesModel::getCandidatesByPosition
+[Method: GET, Route: voter_page]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\User.php(21): CodeIgniter\Model->__call('getCandidatesByPosition', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:53:33 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CandidatesModel::getPresidents
+[Method: GET, Route: voter_page]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\User.php(20): CodeIgniter\Model->__call('getPresidents', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:53:46 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CandidatesModel::getPresidents
+[Method: GET, Route: voter_page]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\User.php(20): CodeIgniter\Model->__call('getPresidents', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 12:54:21 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CandidatesModel::getCandidatesByPosition
+[Method: GET, Route: voter_page]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\User.php(21): CodeIgniter\Model->__call('getCandidatesByPosition', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 13:58:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "base_url('submitVote')"
+[Method: POST, Route: base_url%28%27submitVote%27%29]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('base_url(\'submitVote\')')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('base_url(\'submitVote\')')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+ERROR - 2025-05-03 14:04:28 --> mysqli_sql_exception: Unknown column 'vice_president' in 'field list' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `vo...', 0)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vo...')
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vo...')
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vo...', Array, false)
+#4 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Projects\votingsystem\app\Models\VoteModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\User.php(61): App\Models\VoteModel->saveVote(Array)
+#9 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\User->submitVote()
+#10 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-05-03 14:04:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'vice_president' in 'field list'
+[Method: POST, Route: submitVote]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 14:04:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'vice_president' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', NULL, \'4\', \'10\', \'8\', \'12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', NULL, \'4\', \'10\', \'8\', \'12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 14:04:28 --> [Caused by] mysqli_sql_exception: Unknown column 'vice_president' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', NULL, \'4\', \'10\', \'8\', \'12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', NULL, \'4\', \'10\', \'8\', \'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', NULL, \'4\', \'10\', \'8\', \'12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+ERROR - 2025-05-03 14:05:23 --> mysqli_sql_exception: Unknown column 'vice_president' in 'field list' in C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\votingsystem\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `vo...', 0)
+#1 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vo...')
+#2 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vo...')
+#3 C:\xampp\htdocs\Projects\votingsystem\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vo...', Array, false)
+#4 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Projects\votingsystem\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Projects\votingsystem\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Projects\votingsystem\app\Models\VoteModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Projects\votingsystem\app\Controllers\User.php(61): App\Models\VoteModel->saveVote(Array)
+#9 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(933): App\Controllers\User->submitVote()
+#10 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Projects\votingsystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Projects\votingsystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Projects\votingsystem\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-05-03 14:05:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'vice_president' in 'field list'
+[Method: POST, Route: submitVote]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 14:05:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'vice_president' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', \'1\', \'4\', \'10\', \'8\', \'12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', \'1\', \'4\', \'10\', \'8\', \'12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 14:05:23 --> [Caused by] mysqli_sql_exception: Unknown column 'vice_president' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', \'1\', \'4\', \'10\', \'8\', \'12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', \'1\', \'4\', \'10\', \'8\', \'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (\'6\', \'1\', \'4\', \'10\', \'8\', \'12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vote` (`president`, `vice_president`, `secretary`, `treasurer`, `auditor`, `pio`) VALUES (:president:, :vice_president:, :secretary:, :treasurer:, :auditor:, :pio:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VoteModel.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\User.php(61): App\Models\VoteModel->saveVote([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->submitVote()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 14:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 14:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 14:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 14:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 14:19:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/voter_ballot.php"
+[Method: GET, Route: voter_ballot]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/voter_ballot.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_ballot', [], true)
+ 3 APPPATH\Controllers\User.php(70): view('user/voter_ballot')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 14:20:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/ballot_page.php"
+[Method: GET, Route: voter_ballot]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/ballot_page.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/ballot_page', [], true)
+ 3 APPPATH\Controllers\User.php(70): view('user/ballot_page')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 14:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 14:20:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/ballot_page.php"
+[Method: GET, Route: voter_ballot]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/ballot_page.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/ballot_page', [], true)
+ 3 APPPATH\Controllers\User.php(70): view('user/ballot_page')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 14:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 14:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 14:44:28 --> ErrorException: Undefined variable $vote_id
+[Method: GET, Route: voter_ballot]
+in APPPATH\Views\user\ballot_page.php on line 70.
+ 1 APPPATH\Views\user\ballot_page.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vote_id', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\ballot_page.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\ballot_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/ballot_page', [], true)
+ 5 APPPATH\Controllers\User.php(44): view('user/ballot_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 14:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 14:48:24 --> ArgumentCountError: Too few arguments to function App\Controllers\User::voter_ballot(), 0 passed in C:\xampp\htdocs\Projects\votingsystem\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: voter_ballot]
+in APPPATH\Controllers\User.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 14:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 14:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 15:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-03 15:05:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/voter_ballot.php"
+[Method: GET, Route: voter_ballot]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/voter_ballot.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_ballot', [], true)
+ 3 APPPATH\Controllers\User.php(82): view('user/voter_ballot', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-05-03 15:06:41 --> ErrorException: Undefined variable $vote
+[Method: GET, Route: voter_ballot]
+in APPPATH\Views\user\ballot_page.php on line 70.
+ 1 APPPATH\Views\user\ballot_page.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vote', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\ballot_page.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\ballot_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/ballot_page', [], true)
+ 5 APPPATH\Controllers\User.php(82): view('user/ballot_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_ballot()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+DEBUG - 2025-05-03 15:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-03 16:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

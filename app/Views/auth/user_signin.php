@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Digital Voting System</title>
+    <title>Register - Digital Voting System</title>
     <style>
         * {
             margin: 0;
@@ -62,7 +62,7 @@
             background: rgba(255, 255, 255, 0.3);
         }
 
-        .login-container {
+        .signup-container {
             background: white;
             border-radius: 20px;
             padding: 50px;
@@ -72,14 +72,14 @@
             text-align: center;
         }
 
-        .login-title {
+        .signup-title {
             color: #4A90E2;
             font-size: 28px;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
-        .login-subtitle {
+        .signup-subtitle {
             color: #666;
             font-size: 16px;
             margin-bottom: 40px;
@@ -88,6 +88,15 @@
         .form-group {
             margin-bottom: 25px;
             text-align: left;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
         }
 
         .form-label {
@@ -112,7 +121,54 @@
             border-color: #4A90E2;
         }
 
-        .login-button {
+        .form-select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-select:focus {
+            outline: none;
+            border-color: #4A90E2;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #4A90E2;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .checkbox-group label {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .checkbox-group a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+
+        .checkbox-group a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-button {
             width: 100%;
             padding: 15px;
             background: linear-gradient(135deg, #4A90E2, #357ABD);
@@ -126,21 +182,16 @@
             margin-bottom: 20px;
         }
 
-        .login-button:hover {
+        .signup-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
         }
 
-        .forgot-password {
-            color: #4A90E2;
-            text-decoration: none;
-            font-size: 14px;
-            margin-bottom: 30px;
-            display: inline-block;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
+        .signup-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
         }
 
         .divider {
@@ -163,29 +214,34 @@
             padding: 0 20px;
         }
 
-        .signup-link {
+        .login-link {
             color: #666;
             font-size: 14px;
         }
 
-        .signup-link a {
+        .login-link a {
             color: #4A90E2;
             text-decoration: none;
             font-weight: 600;
         }
 
-        .signup-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
 
         @media (max-width: 600px) {
-            .login-container {
+            .signup-container {
                 padding: 30px 25px;
                 margin: 0 10px;
             }
 
             .header {
                 font-size: 24px;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
             }
         }
     </style>
@@ -198,30 +254,63 @@
         Digital Voting System
     </div>
 
-    <div class="login-container">
-        <h1 class="login-title">Welcome Back</h1>
-        <p class="login-subtitle">Sign in to cast your vote</p>
+    <div class="signup-container">
+        <h1 class="signup-title">Create Account</h1>
+        <p class="signup-subtitle">Register to participate in digital voting</p>
 
-        <form method="post" action="<?= base_url('/login') ?>">
+        <form method="post" action="<?= base_url('/signin') ?>">
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label" for="firstName">First Name</label>
+                    <input type="text" name="first_name" id="firstName" class="form-input" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="lastName">Last Name</label>
+                    <input type="text" name="last_name" id="lastName" class="form-input" placeholder="Doe" required>
+                </div>
+            </div>
+
             <div class="form-group">
                 <label class="form-label" for="email">Email Address</label>
-                <input type="email" name="email" id="email" class="form-input" placeholder="Enter your email" required>
+                <input type="email" name="email" id="email" class="form-input" placeholder="john.doe@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" name="phone_no" id="phone" class="form-input" placeholder="+1 (555) 123-4567" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="dateOfBirth">Date of Birth</label>
+                <input type="date" name="date_of_birth" id="dateOfBirth" class="form-input" required>
             </div>
 
             <div class="form-group">
                 <label class="form-label" for="password">Password</label>
-                <input type="password" name="password" id="password" class="form-input" placeholder="Enter your password" required>
+                <input type="password" name="password" id="password" class="form-input" placeholder="Enter secure password" minlength="8" required>
             </div>
 
-            <button type="submit" class="login-button">LOGIN TO VOTE</button>
+            <!-- <div class="form-group">
+                <label class="form-label" for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirmPassword" class="form-input" placeholder="Confirm your password" minlength="8" required>
+            </div> -->
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="agree_terms" id="terms" required>
+                <label for="terms">
+                    I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>, and confirm that I am eligible to vote in this jurisdiction.
+                </label>
+            </div>
+
+            <button type="submit" class="signup-button">REGISTER TO VOTE</button>
         </form>
 
         <div class="divider">
             <span>or</span>
         </div>
 
-        <p class="signup-link">
-            Don't have an account? <a href="<?= base_url('/signin') ?>">Register to Vote</a>
+        <p class="login-link">
+            Already have an account? <a href="<?= base_url('/login') ?>">Login to Vote</a>
         </p>
     </div>
 </body>

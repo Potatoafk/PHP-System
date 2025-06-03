@@ -1,0 +1,103 @@
+CRITICAL - 2025-04-20 13:15:09 --> Error: Call to undefined function baseurl()
+[Method: GET, Route: user_mainpage]
+in APPPATH\Views\user\user_mainpage.php on line 26.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/user_mainpage', [], true)
+ 4 APPPATH\Controllers\User.php(10): view('user/user_mainpage')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->mainpage()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:17:52 --> Error: Call to undefined function baseurl()
+[Method: GET, Route: voter_mainpage]
+in APPPATH\Views\user\user_mainpage.php on line 26.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/user_mainpage', [], true)
+ 4 APPPATH\Controllers\User.php(10): view('user/user_mainpage')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_mainpage()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:43:52 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:44:50 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:44:58 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:45:15 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')
+CRITICAL - 2025-04-20 13:48:26 --> ErrorException: Undefined variable $president
+[Method: GET, Route: voter_page]
+in APPPATH\Views\user\voter_page.php on line 26.
+ 1 APPPATH\Views\user\voter_page.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $president', 'C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\votingsystem\\app\\Views\\user\\voter_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/voter_page', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('user/voter_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->voter_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\votingsystem\\public\\index.php')

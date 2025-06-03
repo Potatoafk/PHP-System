@@ -7,43 +7,38 @@
 
     <title>Voting System <?= $title ?? '' ?></title>
 
-    <!-- AdminLTE & Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-    
-    <!-- DataTables -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
-    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-
-    <!-- Google Fonts & Font Awesome -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="<?= base_url('css/voter-style.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('css/result-style.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('css/election-style.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('css/candidate-style.css') ?>">
 
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-    <?= $this->include('partials/admin/admin_navbar') ?>
+    <?= $this->include('partials/admin/management_navbar') ?>  <!--for Navbar Section -->
 
-    <?= $this->include('partials/admin/admin_sidebar') ?>
+    <?= $this->include('partials/admin/management_sidebar') ?> <!--for Sidebar Section -->
 
-    <main class="content-wrapper">
+    <main class="content-wrapper p-3">
         <?= $this->renderSection('content') ?>
     </main>
 
-    <?= $this->include('partials/admin/admin_footer') ?>
+    <?= $this->include('partials/admin/management_footer') ?> <!--for Footer Section -->
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
-
 </body>
 
 </html>

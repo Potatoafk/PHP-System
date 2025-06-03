@@ -5,43 +5,62 @@ use App\Models\UserModel;
 
 class AuthController extends BaseController
 {
+    protected $userModel;
+
+    public function __construct()
+    {
+        $this->userModel = new UserModel();
+    }
+
     public function user_login()
     {
-        return view('auth/user_login');
+        return view('auth/user_login', [
+            'title' => 'User Login'
+        ]);
     }
 
-    public function user_register()
+    public function process_login()
     {
-        $userModel = new UserModel();
-        $data = [
-            'username' => $this->request->getPost('username'),
-            'email' => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-        ];
-        $userModel->insert($data);
-        return redirect()->to('/login')->with('success', 'User registered successfully.');
-    }
-
-    public function login_process()
-    {
-        $userModel = new UserModel();
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $user = $userModel->where('email', $email)->first();
+        $user = $this->userModel->where('email', $email)->first();
 
-        if ($user && password_verify($password, $user['password'])) {
-            session()->set('logged_in', true);
-            session()->set('user_id', $user['id']);
-            return redirect()->to('/admin_dashboard')->with('success', 'Login successful.');
-        } else {
-            return redirect()->to('/login')->with('error', 'Invalid email or password.');
+        if ($user) {
+            return redirect()->to(base_url('/user-page'))->with('success', 'Login successful');
         }
+
+        return redirect()->back()->with('error', 'Invalid credentials');
     }
 
-    // public function logout()
-    // {
-    //     session()->destroy();
-    //     return redirect()->to('/login');
-    // }
+
+
+    // User Registration
+    public function user_register()
+    {
+        return view('auth/user_signin', [
+            'title' => 'User Registration'
+        ]);
+    }
+
+    public function process_register()
+    {
+        $data = [
+            'first_name' => $this->request->getPost('first_name'),
+            'last_name' => $this->request->getPost('last_name'),
+            'email' => $this->request->getPost('email'),
+            'phone_no' => $this->request->getPost('phone_no'),
+            'date_of_birth' => $this->request->getPost('date_of_birth'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT)
+        ];
+
+        $this->userModel->insert($data);
+        return redirect()->to(base_url('/login'))->with('success', 'Registration successful');
+    }
+
+
+    public function logout()
+    {
+        return redirect()->to(base_url('/'))->with('success', 'Logged out successfully');
+    }
 }

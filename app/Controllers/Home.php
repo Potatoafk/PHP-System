@@ -2,12 +2,19 @@
 
 namespace App\Controllers;
 
-use App\Models\CandidatesModel;
-
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('landingpage');
+        return view('homepage', [
+            'title' => 'Home'
+        ]); // Load the homepage view
+    }
+
+    public function user_page()
+    {
+        return view('user/user_page', [
+            'title' => 'User Page'
+        ]); // Load the user page view
     }
 }

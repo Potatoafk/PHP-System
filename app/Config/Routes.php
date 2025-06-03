@@ -1,37 +1,40 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
+
 use App\Controllers\AdminController;
+use App\Controllers\Home;
 
 /**
  * @var RouteCollection $routes
  */
 
 
+ // CONTROLLERS ARE ( TEMPORARY [for testing purposes] --> Home <-- Controller )
+
+
 // landing page
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index'); // Default route to the home page
 
 
 // Auth Routes
 $routes->get('/login', 'AuthController::user_login');
-$routes->get('/register', 'AuthController::user_register');
-// $routes->get('/logout', 'AuthController::logout');
+$routes->post('/login', 'AuthController::process_login');
 
 
-// Admin Routes
-$routes->get('/admin_dashboard', 'Candidates::admin_dashboard');
-$routes->get('/admin/candidates_view', 'Candidates::candidates_view');
+$routes->get('/signin', 'AuthController::user_register');
+$routes->post('/signin', 'AuthController::process_register');
+
+$routes->get('/logout', 'AuthController::logout');
 
 
 // User Routes
-$routes->group('user', function($routes) {
-    $routes->get('', 'User::user');
-    // $routes->get('login', 'User::login');
-    // $routes->get('register', 'User::register');
-    // $routes->get('dashboard', 'User::dashboard');
-    // $routes->get('candidates', 'User::candidates');
-    // $routes->get('logout', 'User::logout');
-    // $routes->get('profile', 'User::profile');
-    // $routes->get('edit_profile', 'User::edit_profile');
-    // $routes->get('vote', 'User::vote');
-});
+$routes->get('/user-page', 'Home::user_page');
+
+
+// Admin Routes
+$routes->get('/management', 'AdminController::management');
+$routes->get('/voters', 'AdminController::voters');
+$routes->get('/results', 'AdminController::results');
+$routes->get('/candidates', 'AdminController::candidates');
+$routes->get('/elections', 'AdminController::elections');
