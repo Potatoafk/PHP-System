@@ -7,6 +7,7 @@ class AuthController extends BaseController
 {
     protected $userModel;
 
+    // Constructor to initialize the UserModel
     public function __construct()
     {
         $this->userModel = new UserModel();
@@ -14,6 +15,7 @@ class AuthController extends BaseController
 
     public function user_login()
     {
+
         return view('auth/user_login', [
             'title' => 'User Login'
         ]);
@@ -26,7 +28,17 @@ class AuthController extends BaseController
 
         $user = $this->userModel->where('email', $email)->first();
 
-        if ($user) {
+        if ($user && password_verify($password, $user['password'])) {
+            // Start session and store user data
+            $session = session();
+            $session->set([
+                'user_id' => $user['user_id'],
+            ]);
+
+            $data = [
+                'first_name' => $user['first_name'],
+            ];
+
             return redirect()->to(base_url('/user-page'))->with('success', 'Login successful');
         }
 

@@ -5,7 +5,7 @@
     <div class="container py-4">
         <!-- Welcome Banner -->
         <div class="jumbotron mb-4">
-            <h1 class="display-4">Welcome, John Doe!</h1>
+            <h1 class="display-4">Welcome, <?= esc($user['first_name']) ?></h1>
             <p class="lead">You have 2 active elections available to vote.</p>
         </div>
 

@@ -1,9 +1,18 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UserModel;
 
 class Home extends BaseController
 {
+
+    protected $userModel;
+
+    public function __construct()
+    {
+        $this->userModel = new UserModel();
+    }
+
     public function index()
     {
         return view('homepage', [
@@ -13,8 +22,14 @@ class Home extends BaseController
 
     public function user_page()
     {
-        return view('user/user_page', [
+        $user_id = session()->get('user_id');
+        $user = $this->userModel->find($user_id);
+
+        $data = [
+            'user' => $user,
             'title' => 'User Page'
-        ]); // Load the user page view
+        ];
+
+        return view('user/user_page', $data); // Load the user page view
     }
 }
