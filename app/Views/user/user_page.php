@@ -6,87 +6,146 @@
         <!-- Welcome Banner -->
         <div class="jumbotron mb-4">
             <h1 class="display-4">Welcome, <?= esc($user['first_name']) ?></h1>
-            <p class="lead">You have 2 active elections available to vote.</p>
+            <p class="lead">You have <?= count($elections) ?> active elections available to vote.</p>
         </div>
 
         <!-- Active Elections Section -->
+
         <h2 class="mb-4">Active Elections</h2>
         <div class="row">
+            <?php foreach ($elections as $election): ?>
             <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-header bg-primary text-white">
-                        <h5 class="card-title mb-0">Election 1</h5>
+                        <h5 class="card-title mb-0"><?= esc($election['election_title']) ?></h5>
                     </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="badge badge-success">Open for Voting</span>
+                            <span class="badge badge-success"><?= esc($election['election_status']) ?></span>
                         </div>
-                        <p class="card-text">Select representatives for your city council. Choose up to 3 candidates
-                            from your district.</p>
+                        <p class="card-text"><?= esc($election['election_description']) ?></p>
                     </div>
                     <div class="card-footer bg-white">
-                        <!-- Modified to toggle modal -->
-                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#voteModal1">Vote
-                            Now</button>
+                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#voteModal<?= $election['election_id'] ?>">
+                            Vote Now
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header bg-primary text-white">
-                        <h5 class="card-title mb-0">Election 2</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="badge badge-success">Open for Voting</span>
+
+            <!-- Vote Modal for Election-->
+            <div class="modal fade" id="voteModal<?= $election['election_id'] ?>" tabindex="-1" role="dialog" aria-labelledby="voteModal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title" id="voteModal1Label"><?= esc($election['election_title']) ?></h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <p class="card-text">Select representatives for your city council. Choose up to 3 candidates
-                            from your district.</p>
-                    </div>
-                    <div class="card-footer bg-white">
-                        Modified to toggle modal
-                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#voteModal2">Vote
-                            Now</button>
+                        <div class="modal-body">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle mr-2"></i> Please select your preferred candidate for each
+                                position.
+                            </div>
+
+                            <form method="post" action="<?= base_url('/user-page') ?>">
+                                <!-- President Position -->
+                                <div class="form-group">
+                                    <label for="mayor"><strong>President</strong></label>
+                                    <select class="form-control" id="mayor">
+                                        <option selected disabled>Select a candidate</option>
+                                        <?php foreach ($president as $PRESIDENT): ?>
+                                            <?php if ($PRESIDENT['election_id'] == $election['election_id']): ?>
+                                                <option value="<?= esc($PRESIDENT['candidate_id']); ?>">
+                                                    <?= esc($PRESIDENT['candidate_first_name']); ?>
+                                                    <?= esc($PRESIDENT['candidate_last_name']); ?>
+                                                </option>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+
+                                <!-- Vice-President Position -->
+                                <div class="form-group">
+                                    <label for="cityCouncil"><strong>Vice-President</strong></label>
+                                    <select class="form-control" id="cityCouncil">
+                                        <option selected disabled>Select a candidate</option>
+                                        <?php foreach ($vice_president as $VICE_PRESIDENT): ?>
+                                            <?php if ($VICE_PRESIDENT['election_id'] == $election['election_id']): ?>
+                                                <option value="<?= esc($VICE_PRESIDENT['candidate_id']); ?>">
+                                                    <?= esc($VICE_PRESIDENT['candidate_first_name']); ?>
+                                                    <?= esc($VICE_PRESIDENT['candidate_last_name']); ?>
+                                                </option>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+
+                                <!-- Secretary Position -->
+                                <div class="form-group">
+                                    <label for="treasurer"><strong>Secretary</strong></label>
+                                    <select class="form-control" id="treasurer">
+                                        <option selected disabled>Select a candidate</option>
+                                        <?php foreach ($secretary as $SECRETARY): ?>
+                                            <?php if ($SECRETARY['election_id'] == $election['election_id']): ?>
+                                                <option value="<?= esc($SECRETARY['candidate_id']); ?>">
+                                                    <?= esc($SECRETARY['candidate_first_name']); ?>
+                                                    <?= esc($SECRETARY['candidate_last_name']); ?>
+                                                </option>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+
+                                <!-- Treasurer Position -->
+                                <div class="form-group">
+                                    <label for="schoolBoard"><strong>Treasurer</strong></label>
+                                    <select class="form-control" id="schoolBoard">
+                                        <option selected disabled>Select a candidate</option>
+                                        <?php foreach ($treasurer as $TREASURER): ?>
+                                            <?php if ($TREASURER['election_id'] == $election['election_id']): ?>
+                                                <option value="<?= esc($TREASURER['candidate_id']); ?>">
+                                                    <?= esc($TREASURER['candidate_first_name']); ?>
+                                                    <?= esc($TREASURER['candidate_last_name']); ?>
+                                                </option>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+
+                                <!-- Auditor Position -->
+                                <div class="form-group">
+                                    <label for="schoolBoard"><strong>Auditor</strong></label>
+                                    <select class="form-control" id="schoolBoard">
+                                        <option selected disabled>Select a candidate</option>
+                                        <?php foreach ($auditor as $AUDITOR): ?>
+                                            <?php if ($AUDITOR['election_id'] == $election['election_id']): ?>
+                                                <option value="<?= esc($AUDITOR['candidate_id']); ?>">
+                                                    <?= esc($AUDITOR['candidate_first_name']); ?>
+                                                    <?= esc($AUDITOR['candidate_last_name']); ?>
+                                                </option>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+
+                                <div class="alert alert-warning">
+                                    <i class="fas fa-info-circle mr-2"></i> Pleace Check your selections before submitting.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Submit Vote</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <?php endforeach; ?>
         </div>
 
-
-        <!-- Recent Voting History -->
-        <!-- <h2 class="mb-4 mt-4">Your Voting History</h2>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Election</th>
-                        <th>Date Voted</th>
-                        <th>Status</th>
-                        <th>Results</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mayor Election</td>
-                        <td>April 10, 2025</td>
-                        <td><span class="badge badge-success">Completed</span></td>
-                        <td><a href="#" class="btn btn-sm btn-info">View Results</a></td>
-                    </tr>
-                    <tr>
-                        <td>County Tax Referendum</td>
-                        <td>March 25, 2025</td>
-                        <td><span class="badge badge-success">Completed</span></td>
-                        <td><a href="#" class="btn btn-sm btn-info">View Results</a></td>
-                    </tr>
-                    <tr>
-                        <td>State Representative</td>
-                        <td>February 15, 2025</td>
-                        <td><span class="badge badge-success">Completed</span></td>
-                        <td><a href="#" class="btn btn-sm btn-info">View Results</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> -->
     </div>
 
     <!-- Profile Modal -->
@@ -150,94 +209,4 @@
         </div>
     </div>
 
-    <!-- Vote Modal for Election 1 -->
-    <div class="modal fade" id="voteModal1" tabindex="-1" role="dialog" aria-labelledby="voteModal1Label"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="voteModal1Label">Vote: Election 1</h5>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="alert alert-info">
-                        <i class="fas fa-info-circle mr-2"></i> Please select your preferred candidate for each
-                        position.
-                    </div>
-
-                    <form>
-                        <!-- President Position -->
-                        <div class="form-group">
-                            <label for="mayor"><strong>President</strong></label>
-                            <select class="form-control" id="mayor">
-                                <option selected disabled>Select a candidate</option>
-                                <option>John Smith</option>
-                                <option>Jane Doe</option>
-                                <option>Robert Johnson</option>
-                                <option>Maria Garcia</option>
-                            </select>
-                        </div>
-
-                        <!-- Vice-President Position -->
-                        <div class="form-group">
-                            <label for="cityCouncil"><strong>Vice-President</strong></label>
-                            <select class="form-control" id="cityCouncil">
-                                <option selected disabled>Select a candidate</option>
-                                <option>Michael Brown</option>
-                                <option>Sarah Wilson</option>
-                                <option>David Lee</option>
-                                <option>Jennifer Martinez</option>
-                            </select>
-                        </div>
-
-                        <!-- Secretary Position -->
-                        <div class="form-group">
-                            <label for="treasurer"><strong>Secretary</strong></label>
-                            <select class="form-control" id="treasurer">
-                                <option selected disabled>Select a candidate</option>
-                                <option>Thomas Anderson</option>
-                                <option>Emily Taylor</option>
-                                <option>James Williams</option>
-                                <option>Patricia Moore</option>
-                            </select>
-                        </div>
-
-                        <!-- Treasurer Position -->
-                        <div class="form-group">
-                            <label for="schoolBoard"><strong>Treasurer</strong></label>
-                            <select class="form-control" id="schoolBoard">
-                                <option selected disabled>Select a candidate</option>
-                                <option>Richard Davis</option>
-                                <option>Elizabeth Miller</option>
-                                <option>Charles Wilson</option>
-                                <option>Susan Martin</option>
-                            </select>
-                        </div>
-
-                        <!-- Auditor Position -->
-                        <div class="form-group">
-                            <label for="schoolBoard"><strong>Auditor</strong></label>
-                            <select class="form-control" id="schoolBoard">
-                                <option selected disabled>Select a candidate</option>
-                                <option>Richard Davis</option>
-                                <option>Elizabeth Miller</option>
-                                <option>Charles Wilson</option>
-                                <option>Susan Martin</option>
-                            </select>
-                        </div>
-
-                        <div class="alert alert-warning">
-                            <i class="fas fa-info-circle mr-2"></i> Pleace Check your selections before submitting.
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Submit Vote</button>
-                </div>
-            </div>
-        </div>
-    </div>
 <?= $this->endsection() ?>

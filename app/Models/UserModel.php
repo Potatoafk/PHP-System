@@ -16,4 +16,5 @@ class UserModel extends Model
         'date_of_birth',
         'password',
     ];
+
 }

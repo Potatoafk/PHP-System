@@ -6,12 +6,13 @@ use CodeIgniter\Model;
 
 class CandidatesModel extends Model
 {
-    protected $table = 'candidates';
-    protected $primaryKey = 'ID';
+    protected $table = 'candidates_table';
+    protected $primaryKey = 'candidate_id';
     protected $allowedFields = [
-        'candidate_name',
+        'candidate_first_name',
+        'candidate_last_name',
         'candidate_position',
-        'candidate_party'
+        'candidate_vote_count',
     ];
 
     public function getCandidatesByPosition($position)
@@ -23,6 +24,12 @@ class CandidatesModel extends Model
     {
         return $this->findAll();
     }
+
+    // incremets the vote count for a candidate
+    public function incrementVoteCount($candidateId)
+    {
+        $this->set('candidate_vote_count', 'candidate_vote_count + 1', false);
+        $this->where('candidate_id', $candidateId);
+        return $this->update();
+    }
 }
-
-

@@ -30,6 +30,7 @@ $routes->get('/logout', 'AuthController::logout');
 
 // User Routes
 $routes->get('/user-page', 'Home::user_page');
+$routes->post('/user-page', 'Home::vote_logic'); // Route for voting action
 
 
 // Admin Routes
