@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\ElectionModel;
 use App\Models\CandidatesModel;
+use App\Models\VotesModel;
 
 class Home extends BaseController
 {
@@ -11,13 +12,17 @@ class Home extends BaseController
     protected $userModel;
     protected $electionModel;
     protected $candidatesModel;
+    protected $votesModel;
 
+    // Constructor to initialize models
     public function __construct()
     {
         $this->userModel = new UserModel();
         $this->electionModel = new ElectionModel();
         $this->candidatesModel = new CandidatesModel();
+        $this->votesModel = new VotesModel();
     }
+
 
     public function index()
     {
@@ -25,6 +30,7 @@ class Home extends BaseController
             'title' => 'Home'
         ]); // Load the homepage view
     }
+
 
     public function user_page()
     {
@@ -59,19 +65,5 @@ class Home extends BaseController
         ];
 
         return view('user/user_page', $data); // Load the user page view
-    }
-
-
-    // Vote logic function
-    public function vote_logic()
-    {
-        $user_id = session()->get('user_id');
-        $election_id = $this->request->getPost('election_id');
-        $candidate_id = $this->request->getPost('candidate_id');
-
-        // increment vote count for the candidate
-        $this->candidatesModel->incrementVoteCount($candidate_id);
-
-        return redirect()->to(base_url('/user-page'))->with('success', 'Your vote has been recorded successfully.');
     }
 }

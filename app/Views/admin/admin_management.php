@@ -7,11 +7,10 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1 class="m-0">Dashboard</h1>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">
@@ -36,8 +35,8 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>44</h3>
-                            <p>Vote Cast</p>
+                            <h3>2</h3>
+                            <p>No. of Election</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
@@ -55,7 +54,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="fas fa-chart-pie mr-1"></i>
-                                Updates
+                                Latest Election Updates
                             </h3>
                         </div>
                         <div class="card-body">
@@ -94,11 +93,6 @@
                                             <td>John Ivan</td>
                                             <td>34</td>
                                         </tr>
-                                        <tr>
-                                            <td>PIO</td>
-                                            <td>Mike Tyson</td>
-                                            <td>35</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -127,37 +121,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($voters as $voter): ?>
                                         <tr>
-                                            <td class="align-middle font-weight-bold">001</td>
-                                            <td class="align-middle">John </td>
-                                            <td class="align-middle">Doe</td>
+                                            <td class="align-middle font-weight-bold"><?= $voter['user_id'] ?></td>
+                                            <td class="align-middle"><?= $voter['first_name'] ?></td>
+                                            <td class="align-middle"><?= $voter['last_name'] ?></td>
                                         </tr>
-                                        <tr>
-                                            <td class="align-middle font-weight-bold">002</td>
-                                            <td class="align-middle">Jane</td>
-                                            <td class="align-middle">Smith</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="align-middle font-weight-bold">003</td>
-                                            <td class="align-middle">Mike</td>
-                                            <td class="align-middle">Johnson</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="align-middle font-weight-bold">003</td>
-                                            <td class="align-middle">Mike</td>
-                                            <td class="align-middle">Johnson</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="align-middle font-weight-bold">003</td>
-                                            <td class="align-middle">Mike</td>
-                                            <td class="align-middle">Johnson</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="align-middle font-weight-bold">003</td>
-                                            <td class="align-middle">Mike</td>
-                                            <td class="align-middle">Johnson</td>
-                                        </tr>
-
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

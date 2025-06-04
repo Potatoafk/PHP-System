@@ -3,28 +3,8 @@
 
     <div class="header">
         <h1 class="header-title">Election Results</h1>
-        <div class="header-actions">
-            <a href="export_results.html" class="btn btn-secondary">📄 Export</a>
-        </div>
     </div>
 
-    <div class="search-section">
-        <form class="search-form">
-            <div class="form-group">
-                <label class="form-label">Search Results</label>
-                <input type="text" name="search" class="form-input" placeholder="Search by candidate or position...">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Election</label>
-                <select name="election" class="form-select">
-                    <option value="">All Elections</option>
-                    <option value="presidential">Presidential Election 2025</option>
-                    <option value="local">Local Election 2025</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
-    </div>
 
     <div class="results-table">
         <div class="table-header">
@@ -35,61 +15,65 @@
         <table>
             <thead>
                 <tr>
-                    <th>Position</th>
-                    <th>Candidate Name</th>
-                    <th>Vote Count</th>
-                    <th>Election</th>
+                    <th>Election Title</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
+                <?php foreach($elections as $election): ?>
                 <tr>
-                    <td>President</td>
-                    <td>John Smith</td>
-                    <td>150</td>
-                    <td>Presidential Election 2025</td>
+                    <td><?= esc($election['election_title']) ?></td>
                     <td>
                         <div class="action-buttons">
-                            <a href="view_result.html?id=001" class="btn btn-view btn-sm">View</a>
+                            <button type="button" class="btn btn-view btn-sm" data-bs-toggle="modal" data-bs-target="#resultModal<?= $election['election_id'] ?>">
+                                View Results
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="resultModal<?= $election['election_id'] ?>" tabindex="-1" aria-labelledby="resultModalLabel<?= $election['election_id'] ?>" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="resultModalLabel<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?> Results</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="results-list">
+                                            <div class="president">
+                                                <h5>President: John Smith</h5>
+                                                <small>Total Votes: 156 (45%)</small>
+                                            </div>
+                                            <hr>
+                                            <div class="vice-president">
+                                                <h5>Vice President: Jane Doe</h5>
+                                                <small>Total Votes: 156 (45%)</small>
+                                            <hr>
+                                            <div class="secretary">
+                                                <h5>Secretary: Jane Doe</h5>
+                                                <small>Total Votes: 156 (45%)</small>
+                                            <hr>
+                                            <div class="treasurer">
+                                                <h5>Treasurer: Jane Doe</h5>
+                                                <small>Total Votes: 156 (45%)</small>
+                                            <hr>
+                                            <div class="auditor">
+                                                <h5>Auditor: Jane Doe</h5>
+                                                <small>Total Votes: 156 (45%)</small>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </td>
-                </tr>
                 <tr>
-                    <td>Vice President</td>
-                    <td>Mary Johnson</td>
-                    <td>120</td>
-                    <td>Presidential Election 2025</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_result.html?id=002" class="btn btn-view btn-sm">View</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Secretary</td>
-                    <td>Robert Brown</td>
-                    <td>90</td>
-                    <td>Presidential Election 2025</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_result.html?id=003" class="btn btn-view btn-sm">View</a>
-                        </div>
-                    </td>
-                </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
-
-        <div class="pagination">
-            <button>← Previous</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Next →</button>
-        </div>
-    </div>
-
-    <div class="footer">
-        Copyright © 2025 <a href="#" style="color: #3498db;">Voting System Sheesh</a>. All rights reserved.
     </div>
 
 <?= $this->endsection() ?>

@@ -12,7 +12,6 @@ class CandidatesModel extends Model
         'candidate_first_name',
         'candidate_last_name',
         'candidate_position',
-        'candidate_vote_count',
     ];
 
     public function getCandidatesByPosition($position)
@@ -23,13 +22,5 @@ class CandidatesModel extends Model
     public function getAllCandidates()
     {
         return $this->findAll();
-    }
-
-    // incremets the vote count for a candidate
-    public function incrementVoteCount($candidateId)
-    {
-        $this->set('candidate_vote_count', 'candidate_vote_count + 1', false);
-        $this->where('candidate_id', $candidateId);
-        return $this->update();
     }
 }

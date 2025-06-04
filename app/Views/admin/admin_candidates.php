@@ -4,100 +4,131 @@
     <div class="header">
         <h1 class="header-title">Candidates Management</h1>
         <div class="header-actions">
-            <a href="add_candidate.html" class="btn btn-primary">+ Add New Candidate</a>
-            <a href="export_candidates.html" class="btn btn-secondary">📄 Export</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCandidateModal">
+                + Add New Candidate
+            </button>
         </div>
     </div>
 
-    <div class="search-section">
-        <form class="search-form">
-            <div class="form-group">
-                <label class="form-label">Search Candidates</label>
-                <input type="text" name="search" class="form-input" placeholder="Search by name or ID...">
+    <!-- Add Candidate Modal -->
+    <div class="modal fade" id="addCandidateModal" tabindex="-1" aria-labelledby="addCandidateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="<?= base_url('admin/candidates/add') ?>" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addCandidateModalLabel">Add New Candidate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="candidate_first_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="candidate_last_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Position</label>
+                            <input type="text" class="form-control" id="position" name="candidate_position" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="election" class="form-label">Election</label>
+                            <select class="form-select" id="election" name="election_id" required>
+                                <option value="">Select Election</option>
+                                <?php foreach($elections as $election): ?>
+                                    <option value="<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save Candidate</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label class="form-label">Position</label>
-                <select name="position" class="form-select">
-                    <option value="">All Positions</option>
-                    <option value="president">President</option>
-                    <option value="vice_president">Vice President</option>
-                    <option value="secretary">Secretary</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
+        </div>
     </div>
+
 
     <div class="candidates-table">
         <div class="table-header">
             <div class="table-title">Candidates List</div>
-            <div class="table-stats">Total: 3 candidates</div>
+            <div class="table-stats">Total: <?= count($candidates) ?> candidates</div>
+        </div>
+
+        <!-- Edit Candidate Modal -->
+        <div class="modal fade" id="editCandidateModal" tabindex="-1" aria-labelledby="editCandidateModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="<?= base_url('admin/candidates/update') ?>" method="post">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editCandidateModalLabel">Edit Candidate</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="hidden" name="candidate_id" id="edit_candidate_id">
+                            <div class="mb-3">
+                                <label for="edit_firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="edit_firstName" name="candidate_first_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="edit_lastName" name="candidate_last_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_position" class="form-label">Position</label>
+                                <input type="text" class="form-control" id="edit_position" name="candidate_position" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_election" class="form-label">Election</label>
+                                <select class="form-select" id="edit_election" name="election_id" required>
+                                    <option value="">Select Election</option>
+                                    <?php foreach($elections as $election): ?>
+                                    <option value="<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Update Candidate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <table>
             <thead>
-                <tr>
-                    <th>Candidate ID</th>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Election</th>
-                    <th>Actions</th>
-                </tr>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Election</th>
+                <th>Actions</th>
+            </tr>
             </thead>
             <tbody>
+            <?php if(empty($candidates)): ?>
                 <tr>
-                    <td>C001</td>
-                    <td>John Smith</td>
-                    <td>President</td>
-                    <td>Presidential Election 2025</td>
+                <td colspan="5" class="text-center">No candidates found</td>
+                </tr>
+            <?php else: ?>
+                <?php foreach($candidates as $candidate): ?>
+                <tr>
+                    <td><?= esc($candidate['candidate_first_name']) ?> <?=esc($candidate['candidate_last_name']) ?> </td>
+                    <td><?= esc($candidate['candidate_position']) ?></td>
+                    <td><?= esc($candidate['election_id']) ?></td>
                     <td>
-                        <div class="action-buttons">
-                            <a href="view_candidate.html?id=C001" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_candidate.html?id=C001" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_candidate.html?id=C001" class="btn btn-delete btn-sm">Delete</a>
-                        </div>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editCandidateModal">Edit</button>
+                    <button onclick="deleteCandidate(<?= $candidate['candidate_id'] ?>)" class="btn btn-sm btn-danger">Delete</button>
                     </td>
                 </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>Mary Johnson</td>
-                    <td>Vice President</td>
-                    <td>Presidential Election 2025</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_candidate.html?id=C002" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_candidate.html?id=C002" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_candidate.html?id=C002" class="btn btn-delete btn-sm">Delete</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Robert Brown</td>
-                    <td>Secretary</td>
-                    <td>Presidential Election 2025</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_candidate.html?id=C003" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_candidate.html?id=C003" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_candidate.html?id=C003" class="btn btn-delete btn-sm">Delete</a>
-                        </div>
-                    </td>
-                </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
             </tbody>
         </table>
-
-        <div class="pagination">
-            <button>← Previous</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Next →</button>
-        </div>
-    </div>
-
-    <div class="footer">
-        Copyright © 2025 <a href="#" style="color: #3498db;">Voting System Sheesh</a>. All rights reserved.
     </div>
 
 <?= $this->endsection() ?>

@@ -1,0 +1,1031 @@
+DEBUG - 2025-06-04 02:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-04 02:04:39 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: user-page]
+in APPPATH\Views\user\user_page.php on line 8.
+ 1 APPPATH\Views\user\user_page.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\user\\user_page.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\user\\user_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/user_page', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('user/user_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->user_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+DEBUG - 2025-06-04 02:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 02:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-04 14:23:45 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: user-page]
+in APPPATH\Views\user\user_page.php on line 8.
+ 1 APPPATH\Views\user\user_page.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\user\\user_page.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\user\\user_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/user_page', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('user/user_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->user_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+DEBUG - 2025-06-04 14:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 14:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-04 14:50:19 --> ErrorException: Undefined variable $positions
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 23.
+ 1 APPPATH\Views\admin\admin_candidates.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positions', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:52:34 --> ErrorException: Undefined variable $candidate_positions
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 17.
+ 1 APPPATH\Views\admin\admin_candidates.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate_positions', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:54:24 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 36.
+ 1 APPPATH\Views\admin\admin_candidates.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:55:49 --> ErrorException: Undefined array key "candidate_election"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "candidate_election"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:55:50 --> ErrorException: Undefined array key "candidate_election"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "candidate_election"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:56:11 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 41.
+ 1 APPPATH\Views\admin\admin_candidates.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 41)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:56:28 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 50.
+ 1 APPPATH\Views\admin\admin_candidates.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:56:29 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 50.
+ 1 APPPATH\Views\admin\admin_candidates.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:57:22 --> ErrorException: Undefined array key "election_id.election_title"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_id.election_title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:58:36 --> ErrorException: Undefined array key "election_title"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 14:58:37 --> ErrorException: Undefined array key "election_title"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:04:29 --> mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candida...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candida...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candida...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candida...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:04:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:04:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:04:30 --> [Caused by] mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:05:00 --> mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candida...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candida...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candida...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candida...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:05:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:00 --> [Caused by] mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:05:03 --> mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candida...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candida...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candida...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candida...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:05:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:03 --> [Caused by] mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections_table`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(86): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:05:33 --> mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candida...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candida...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candida...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candida...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:05:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:33 --> [Caused by] mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:05:35 --> mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candida...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candida...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candida...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candida...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:05:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:05:35 --> [Caused by] mysqli_sql_exception: Table 'db_voting_system.elections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `candidates`.*, `elections`.`title` as `election_title`
+FROM `candidates_table`
+JOIN `elections` ON `candidates`.`election_id` = `elections`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(83): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:06:15 --> ErrorException: Undefined array key "election_table.election_title"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_table.election_title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:07:12 --> ErrorException: Undefined array key "election_title"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+ERROR - 2025-06-04 15:07:52 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Projects\test voting system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Projects\test voting system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Projects\test voting system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Projects\test voting system\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Projects\test voting system\app\Controllers\AdminController.php(81): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+#8 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\Projects\test voting system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Projects\test voting system\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Projects\test voting system\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Projects\test voting system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-04 15:07:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(81): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:07:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(81): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:07:52 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `candidates_table`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(81): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:10:07 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 93.
+ 1 APPPATH\Views\admin\admin_candidates.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:10:31 --> ErrorException: Undefined array key "candidate_id"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 93.
+ 1 APPPATH\Views\admin\admin_candidates.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "candidate_id"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:11:47 --> ErrorException: Undefined variable $elections
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 39.
+ 1 APPPATH\Views\admin\admin_candidates.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elections', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(88): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:14:49 --> ErrorException: Undefined array key "election_name"
+[Method: GET, Route: candidates]
+in APPPATH\Views\admin\admin_candidates.php on line 40.
+ 1 APPPATH\Views\admin\admin_candidates.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "election_name"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_candidates.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_candidates', [], true)
+ 5 APPPATH\Controllers\AdminController.php(93): view('admin/admin_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:23:09 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: elections]
+in APPPATH\Views\admin\admin_elections.php on line 49.
+ 1 APPPATH\Views\admin\admin_elections.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_elections', [], true)
+ 5 APPPATH\Controllers\AdminController.php(74): view('admin/admin_elections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->elections()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:23:31 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: elections]
+in APPPATH\Views\admin\admin_elections.php on line 49.
+ 1 APPPATH\Views\admin\admin_elections.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_elections', [], true)
+ 5 APPPATH\Controllers\AdminController.php(74): view('admin/admin_elections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->elections()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:36:56 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: elections]
+in APPPATH\Views\admin\admin_elections.php on line 44.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_elections', [], true)
+ 4 APPPATH\Controllers\AdminController.php(74): view('admin/admin_elections', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->elections()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:36:56 --> [Caused by] ErrorException: Undefined variable $es
+in APPPATH\Views\admin\admin_elections.php on line 44.
+ 1 APPPATH\Views\admin\admin_elections.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $es', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_elections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_elections', [], true)
+ 5 APPPATH\Controllers\AdminController.php(74): view('admin/admin_elections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->elections()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:41:19 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: results]
+in APPPATH\Views\admin\admin_results.php on line 12.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_results', [], true)
+ 4 APPPATH\Controllers\AdminController.php(56): view('admin/admin_results', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->results()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:41:19 --> [Caused by] ErrorException: Undefined variable $votes
+in APPPATH\Views\admin\admin_results.php on line 12.
+ 1 APPPATH\Views\admin\admin_results.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $votes', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_results', [], true)
+ 5 APPPATH\Controllers\AdminController.php(56): view('admin/admin_results', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->results()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:44:12 --> ErrorException: Undefined array key "title"
+[Method: GET, Route: results]
+in APPPATH\Views\admin\admin_results.php on line 25.
+ 1 APPPATH\Views\admin\admin_results.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_results', [], true)
+ 5 APPPATH\Controllers\AdminController.php(62): view('admin/admin_results', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->results()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:47:23 --> ErrorException: Undefined variable $positions
+[Method: GET, Route: results]
+in APPPATH\Views\admin\admin_results.php on line 42.
+ 1 APPPATH\Views\admin\admin_results.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positions', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_results.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_results', [], true)
+ 5 APPPATH\Controllers\AdminController.php(62): view('admin/admin_results', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->results()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:56:10 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 4 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:56:10 --> [Caused by] ErrorException: Undefined variable $elections
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elections', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:58:22 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 4 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 15:58:22 --> [Caused by] ErrorException: Undefined variable $elections
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elections', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:00:44 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 4 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:00:44 --> [Caused by] ErrorException: Undefined variable $elections
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elections', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:02:30 --> ErrorException: Undefined variable $electionCount
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $electionCount', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:02:31 --> ErrorException: Undefined variable $electionCount
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $electionCount', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:03:33 --> ErrorException: Undefined variable $electionCount
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 38.
+ 1 APPPATH\Views\admin\admin_management.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $electionCount', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-04 16:05:09 --> ErrorException: Undefined array key "voter_id"
+[Method: GET, Route: management]
+in APPPATH\Views\admin\admin_management.php on line 126.
+ 1 APPPATH\Views\admin\admin_management.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "voter_id"', 'C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Projects\\test voting system\\app\\Views\\admin\\admin_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/admin_management', [], true)
+ 5 APPPATH\Controllers\AdminController.php(38): view('admin/admin_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->management()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Projects\\test voting system\\public\\index.php')

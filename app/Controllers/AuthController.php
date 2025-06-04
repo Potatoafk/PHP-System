@@ -73,6 +73,9 @@ class AuthController extends BaseController
 
     public function logout()
     {
-        return redirect()->to(base_url('/'))->with('success', 'Logged out successfully');
+        $session = session();
+        $session->destroy(); // Destroy the session to log out the user
+
+        return redirect()->to(base_url('/login'))->with('success', 'Logged out successfully');
     }
 }

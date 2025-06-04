@@ -3,111 +3,105 @@
 
     <div class="header">
         <h1 class="header-title">Voters Management</h1>
-        <div class="header-actions">
-            <a href="add_voter.html" class="btn btn-primary">+ Add New Voter</a>
-        </div>
-    </div>
-
-    <div class="search-section">
-        <form class="search-form">
-            <div class="form-group">
-                <label class="form-label">Search Voters</label>
-                <input type="text" name="search" class="form-input" placeholder="Search by name, email, or ID...">
-            </div>
-            <div class="form-group">
-                <label class="form-label">District</label>
-                <select name="district" class="form-select">
-                    <option value="">All Districts</option>
-                    <option value="district1">District 1 - Downtown</option>
-                    <option value="district2">District 2 - North Side</option>
-                    <option value="district3">District 3 - East End</option>
-                    <option value="district4">District 4 - West Side</option>
-                    <option value="district5">District 5 - South Hills</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
     </div>
 
     <div class="voters-table">
         <div class="table-header">
             <div class="table-title">Registered Voters</div>
-            <div class="table-stats">Total: 150 voters</div>
+            <div class="table-stats">Total: <?= count($voters) ?> voters</div>
         </div>
 
+        <!-- Table Structure -->
         <table>
             <thead>
-                <tr>
-                    <th>Voter ID</th>
-                    <th>Full Name</th>
-                    <th>Email</th>
-                    <th>Registration Date</th>
-                    <th>Actions</th>
-                </tr>
+            <tr>
+            <th>Voter ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Registration Date</th>
+            <th>Actions</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>John Doe</td>
-                    <td>john.doe@email.com</td>
-                    <td>2025-05-15</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_voter.html?id=001" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_voter.html?id=001" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_voter.html?id=001" class="btn btn-delete btn-sm">Delete</a>
+            <?php foreach ($voters as $voter): ?>
+            <tr>
+            <td><?= $voter['user_id'] ?></td>
+            <td><?= $voter['first_name'] . ' ' . $voter['last_name'] ?></td>
+            <td><?= $voter['email'] ?></td>
+            <td><?= date('Y-m-d', strtotime($voter['date_of_birth'])) ?></td>
+            <td>
+                <div class="action-buttons">
+                <!-- View Button -->
+                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal<?= $voter['user_id'] ?>">
+                    View
+                </button>
+                <!-- Edit Button -->
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $voter['user_id'] ?>">
+                    Edit
+                </button>
+                <a href="delete_voter.html?id=<?= $voter['user_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+
+                <!-- View Modal -->
+                <div class="modal fade" id="viewModal<?= $voter['user_id'] ?>" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Voter Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>Jane Smith</td>
-                    <td>jane.smith@email.com</td>
-                    <td>2025-05-14</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_voter.html?id=002" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_voter.html?id=002" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_voter.html?id=002" class="btn btn-delete btn-sm">Delete</a>
+                        <div class="modal-body">
+                            <p><strong>Voter ID:</strong> <?= $voter['user_id'] ?></p>
+                            <p><strong>Name:</strong> <?= $voter['first_name'] . ' ' . $voter['last_name'] ?></p>
+                            <p><strong>Email:</strong> <?= $voter['email'] ?></p>
+                            <p><strong>Registration Date:</strong> <?= date('Y-m-d', strtotime($voter['date_of_birth'])) ?></p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td>Mike Johnson</td>
-                    <td>mike.johnson@email.com</td>
-                    <td>2025-05-13</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_voter.html?id=003" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_voter.html?id=003" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_voter.html?id=003" class="btn btn-delete btn-sm">Delete</a>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Edit Modal -->
+                <div class="modal fade" id="editModal<?= $voter['user_id'] ?>" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit Voter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="update_voter.php" method="POST">
+                        <input type="hidden" name="user_id" value="<?= $voter['user_id'] ?>">
+                        <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="first_name" value="<?= $voter['first_name'] ?>">
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>004</td>
-                    <td>John Ivan</td>
-                    <td>John.Ivan@email.com</td>
-                    <td>2003-11-20</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_voter.html?id=003" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_voter.html?id=003" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_voter.html?id=003" class="btn btn-delete btn-sm">Delete</a>
+                        <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="last_name" value="<?= $voter['last_name'] ?>">
                         </div>
-                    </td>
-                </tr>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" value="<?= $voter['email'] ?>">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </td>
+            </tr>
+            <?php endforeach; ?>
             </tbody>
         </table>
 
-        <div class="pagination">
+        <!-- <div class="pagination">
             <button>← Previous</button>
             <button class="active">1</button>
             <button>2</button>
             <button>3</button>
             <button>Next →</button>
-        </div>
+        </div> -->
     </div>
 
 <?= $this->endsection() ?>

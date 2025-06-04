@@ -4,88 +4,119 @@
     <div class="header">
         <h1 class="header-title">Elections Management</h1>
         <div class="header-actions">
-            <a href="add_election.html" class="btn btn-primary">+ Add New Election</a>
-            <a href="export_elections.html" class="btn btn-secondary">📄 Export</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addElectionModal">
+                + Add New Election
+            </button>
         </div>
     </div>
 
-    <div class="search-section">
-        <form class="search-form">
-            <div class="form-group">
-                <label class="form-label">Search Elections</label>
-                <input type="text" name="search" class="form-input" placeholder="Search by title or ID...">
+    <!-- Add Election Modal -->
+    <div class="modal fade" id="addElectionModal" tabindex="-1" aria-labelledby="addElectionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addElectionModalLabel">Add New Election</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="/admin/elections/add" method="POST">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="election_title" class="form-label">Election Title</label>
+                            <input type="text" class="form-control" id="election_title" name="election_title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="election_description" class="form-label">Election Description</label>
+                            <input type="text" class="form-control" id="election_description" name="election_description" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save Election</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label class="form-label">Status</label>
-                <select name="status" class="form-select">
-                    <option value="">All Status</option>
-                    <option value="active">Active</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
+        </div>
     </div>
 
     <div class="elections-table">
         <div class="table-header">
             <div class="table-title">Active Elections</div>
-            <div class="table-stats">Total: 2 elections</div>
+            <div class="table-stats">Total: <?= count($elections) ?> elections</div>
         </div>
 
         <table>
             <thead>
                 <tr>
-                    <th>Election ID</th>
                     <th>Title</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
+                    <th>Date Created</th>
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
+                <?php foreach($elections as $election): ?>
                 <tr>
-                    <td>E001</td>
-                    <td>Presidential Election 2025</td>
-                    <td>2025-05-01</td>
-                    <td>2025-06-01</td>
-                    <td><span class="status-badge status-active">Active</span></td>
+                    <td><?= esc($election['election_title']) ?></td>
+                    <td><?= esc($election['election_created']) ?></td>
+                    <td><span class="status-badge status-<?= strtolower(esc($election['election_status'])) ?>"><?= esc($election['election_status']) ?></span></td>
                     <td>
                         <div class="action-buttons">
-                            <a href="view_election.html?id=E001" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_election.html?id=E001" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_election.html?id=E001" class="btn btn-delete btn-sm">Delete</a>
+                            <button type="button" class="btn btn-view btn-sm" data-bs-toggle="modal" data-bs-target="#viewElectionModal<?= esc($election['election_id']) ?>">View</button>
+                            <button type="button" class="btn btn-edit btn-sm" data-bs-toggle="modal" data-bs-target="#editElectionModal<?= esc($election['election_id']) ?>">Edit</button>
+                            <a href="/admin/elections/delete/<?= esc($election['election_id']) ?>" class="btn btn-delete btn-sm">Delete</a>
+                        </div>
+
+                        <!-- View Election Modal -->
+                        <div class="modal fade" id="viewElectionModal<?= esc($election['election_id']) ?>" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">View Election</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Title:</strong> <?= esc($election['election_title']) ?></p>
+                                        <p><strong>Description:</strong> <?= esc($election['election_description']) ?></p>
+                                        <p><strong>Created:</strong> <?= esc($election['election_created']) ?></p>
+                                        <p><strong>Status:</strong> <?= esc($election['election_status']) ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edit Election Modal -->
+                        <div class="modal fade" id="editElectionModal<?= esc($election['election_id']) ?>" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Edit Election</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <form action="/admin/elections/update/<?= esc($election['election_id']) ?>" method="POST">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="election_title" class="form-label">Election Title</label>
+                                                <input type="text" class="form-control" name="election_title" value="<?= esc($election['election_title']) ?>" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="election_description" class="form-label">Election Description</label>
+                                                <input type="text" class="form-control" name="election_description" value="<?= esc($election['election_description']) ?>" required>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td>E002</td>
-                    <td>Local Election 2025</td>
-                    <td>2025-05-01</td>
-                    <td>2025-06-01</td>
-                    <td><span class="status-badge status-active">Active</span></td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="view_election.html?id=E002" class="btn btn-view btn-sm">View</a>
-                            <a href="edit_election.html?id=E002" class="btn btn-edit btn-sm">Edit</a>
-                            <a href="delete_election.html?id=E002" class="btn btn-delete btn-sm">Delete</a>
-                        </div>
-                    </td>
-                </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
-
-        <div class="pagination">
-            <button>← Previous</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Next →</button>
-        </div>
     </div>
 
-    <div class="footer">
-        Copyright © 2025 <a href="#" style="color: #3498db;">Voting System Sheesh</a>. All rights reserved.
-    </div>
 
 <?= $this->endsection() ?>
