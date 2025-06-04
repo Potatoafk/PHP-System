@@ -122,7 +122,7 @@
                     <td><?= esc($candidate['election_id']) ?></td>
                     <td>
                     <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editCandidateModal">Edit</button>
-                    <button onclick="deleteCandidate(<?= $candidate['candidate_id'] ?>)" class="btn btn-sm btn-danger">Delete</button>
+                    <a href="/candidate/delete/<?= $candidate['candidate_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

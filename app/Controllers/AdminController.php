@@ -53,6 +53,14 @@ class AdminController extends BaseController
         return view('admin/admin_voters', $data);
     }
 
+    // delete a voter
+    public function deleteVoter($id)
+    {
+        // Delete the voter by ID
+        $this->userModel->delete($id);
+        return redirect()->to(base_url('/voters'))->with('success', 'Voter deleted successfully.');
+    }
+
 
 
 
@@ -84,6 +92,47 @@ class AdminController extends BaseController
         return view('admin/admin_elections', $data); // Load the elections management view
     }
 
+    // Delete an election
+    public function deleteElection($id)
+    {
+        // Delete the election by ID
+        $this->electionModel->delete($id);
+        return redirect()->to(base_url('/elections'))->with('success', 'Election deleted successfully.');
+    }
+
+    // update an election
+    public function updateElection()
+    {
+        // Get the election ID from the request
+        $electionId = $this->request->getPost('election_id');
+
+        // Prepare the data to update
+        $data = [
+            'election_title' => $this->request->getPost('election_title'),
+            'election_description' => $this->request->getPost('election_description'),
+        ];
+
+        // Update the election in the ElectionModel with where clause
+        $this->electionModel->where('election_id', $electionId)->update($electionId, $data);
+
+        return redirect()->to(base_url('/elections'))->with('success', 'Election updated successfully.');
+    }
+
+    // Create a new election
+    public function createElection()
+    {
+        // Prepare the data to insert
+        $data = [
+            'election_title' => $this->request->getPost('election_title'),
+            'election_description' => $this->request->getPost('election_description'),
+        ];
+
+        // Insert the new election into the ElectionModel
+        $this->electionModel->insert($data);
+
+        return redirect()->to(base_url('/elections'))->with('success', 'Election created successfully.');
+    }
+
 
 
 
@@ -103,6 +152,14 @@ class AdminController extends BaseController
         ];
 
         return view('admin/admin_candidates', $data); // Load the candidates management view
+    }
+
+    // Delete a candidate
+    public function deleteCandidate($id)
+    {
+        // Delete the candidate by ID
+        $this->candidatesModel->delete($id);
+        return redirect()->to(base_url('/candidates'))->with('success', 'Candidate deleted successfully.');
     }
 
 }

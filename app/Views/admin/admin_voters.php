@@ -39,7 +39,7 @@
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $voter['user_id'] ?>">
                     Edit
                 </button>
-                <a href="delete_voter.html?id=<?= $voter['user_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
+                <a href="/voters/delete/<?= $voter['user_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
                 </div>
 
                 <!-- View Modal -->
@@ -94,14 +94,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-
-        <!-- <div class="pagination">
-            <button>← Previous</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Next →</button>
-        </div> -->
     </div>
 
 <?= $this->endsection() ?>

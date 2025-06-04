@@ -35,7 +35,16 @@ $routes->post('/user-page', 'Home::vote_logic'); // Route for voting action
 
 // Admin Routes
 $routes->get('/management', 'AdminController::management');
+
 $routes->get('/voters', 'AdminController::voters');
+$routes->get('/voters/delete/(:num)', 'AdminController::deleteVoter/$1');
+
 $routes->get('/results', 'AdminController::results');
+
 $routes->get('/candidates', 'AdminController::candidates');
+$routes->get('/candidate/delete/(:num)', 'AdminController::deleteCandidate/$1');
+
 $routes->get('/elections', 'AdminController::elections');
+$routes->post('/elections/add', 'AdminController::createElection');
+$routes->post('/elections/update/(:num)', 'AdminController::updateElection/$1');
+$routes->get('/elections/delete/(:num)', 'AdminController::deleteElection/$1');

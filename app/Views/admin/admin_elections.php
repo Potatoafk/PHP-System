@@ -18,7 +18,7 @@
                     <h5 class="modal-title" id="addElectionModalLabel">Add New Election</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="/admin/elections/add" method="POST">
+                <form method="post" action="elections/add">
                     <div class="modal-body">
                         <div class="mb-3">
                             <label for="election_title" class="form-label">Election Title</label>
@@ -63,7 +63,7 @@
                         <div class="action-buttons">
                             <button type="button" class="btn btn-view btn-sm" data-bs-toggle="modal" data-bs-target="#viewElectionModal<?= esc($election['election_id']) ?>">View</button>
                             <button type="button" class="btn btn-edit btn-sm" data-bs-toggle="modal" data-bs-target="#editElectionModal<?= esc($election['election_id']) ?>">Edit</button>
-                            <a href="/admin/elections/delete/<?= esc($election['election_id']) ?>" class="btn btn-delete btn-sm">Delete</a>
+                            <a href="elections/delete/<?= esc($election['election_id']) ?>" class="btn btn-delete btn-sm">Delete</a>
                         </div>
 
                         <!-- View Election Modal -->
@@ -92,7 +92,7 @@
                                         <h5 class="modal-title">Edit Election</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <form action="/admin/elections/update/<?= esc($election['election_id']) ?>" method="POST">
+                                    <form method="post" action="elections/update/<?= esc($election['election_id']) ?>">
                                         <div class="modal-body">
                                             <div class="mb-3">
                                                 <label for="election_title" class="form-label">Election Title</label>
