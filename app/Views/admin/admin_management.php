@@ -21,7 +21,7 @@
                     <!-- small box -->
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>150</h3>
+                            <h3><?= count($voters) ?></h3>
                             <p>Registered Voters</p>
                         </div>
                         <div class="icon">
@@ -35,7 +35,7 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>2</h3>
+                            <h3><?= count($elections) ?></h3>
                             <p>No. of Election</p>
                         </div>
                         <div class="icon">

@@ -92,7 +92,7 @@
                                         <h5 class="modal-title">Edit Election</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <form method="post" action="elections/update/<?= esc($election['election_id']) ?>">
+                                    <form method="post" action="<?= base_url('elections/update/' . $election['election_id']) ?>">
                                         <div class="modal-body">
                                             <div class="mb-3">
                                                 <label for="election_title" class="form-label">Election Title</label>

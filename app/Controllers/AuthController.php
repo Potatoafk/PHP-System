@@ -2,15 +2,18 @@
 namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UserModel;
+use App\Models\AdminModel;
 
 class AuthController extends BaseController
 {
     protected $userModel;
+    protected $adminModel;
 
     // Constructor to initialize the UserModel
     public function __construct()
     {
         $this->userModel = new UserModel();
+        $this->adminModel = new AdminModel();
     }
 
     public function user_login()
@@ -77,5 +80,32 @@ class AuthController extends BaseController
         $session->destroy(); // Destroy the session to log out the user
 
         return redirect()->to(base_url('/login'))->with('success', 'Logged out successfully');
+    }
+
+
+
+    public function admin_login()
+    {
+        return view('auth/admin_login', [
+            'title' => 'Admin Login'
+        ]);
+    }
+    public function process_admin_login()
+    {
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+        $admin = $this->adminModel->where('username', $username)->first();
+
+        if ($admin && password_verify($password, $admin['password'])) {
+            // Start session and store admin data
+            $session = session();
+            $session->set([
+                'admin_id' => $admin['admin_id'],
+                'username' => $admin['username'],
+            ]);
+
+            return redirect()->to(base_url('/management'))->with('success', 'Login successful');
+        }
+        return redirect()->back()->with('error', 'Invalid credentials');
     }
 }

@@ -29,10 +29,12 @@ class AdminController extends BaseController
     {
 
         $voters = $this->userModel->findAll();
+        $elections = $this->electionModel->findall();
 
         $data = [
             'title' => 'Admin Dashboard',
             'voters' => $voters,
+            'elections' => $elections,
         ];
 
         return view('admin/admin_management', $data); // Load the admin dashboard view
@@ -51,6 +53,21 @@ class AdminController extends BaseController
         ];
 
         return view('admin/admin_voters', $data);
+    }
+    // Update a voter's information
+    public function updateVoter($id)
+    {
+        // Prepare the data to update
+        $data = [
+            'first_name' => $this->request->getPost('first_name'),
+            'last_name' => $this->request->getPost('last_name'),
+            'email' => $this->request->getPost('email'),
+        ];
+
+        // Update the voter in the UserModel with where clause
+        $this->userModel->where('user_id', $id)->update($id, $data);
+
+        return redirect()->to(base_url('/voters'))->with('success', 'Voter updated successfully.');
     }
 
     // delete a voter
@@ -153,6 +170,22 @@ class AdminController extends BaseController
 
         return view('admin/admin_candidates', $data); // Load the candidates management view
     }
+    // Create a new candidate
+    public function createCandidate()
+    {
+        // Prepare the data to insert
+        $data = [
+            'candidate_first_name' => $this->request->getPost('candidate_first_name'),
+            'candidate_last_name' => $this->request->getPost('candidate_last_name'),
+            'candidate_position' => $this->request->getPost('candidate_position'),
+            'election_id' => $this->request->getPost('election_id'),
+        ];
+
+        // Insert the new candidate into the CandidatesModel
+        $this->candidatesModel->insert($data);
+
+        return redirect()->to(base_url('/candidates'))->with('success', 'Candidate created successfully.');
+    }
 
     // Delete a candidate
     public function deleteCandidate($id)
@@ -160,6 +193,22 @@ class AdminController extends BaseController
         // Delete the candidate by ID
         $this->candidatesModel->delete($id);
         return redirect()->to(base_url('/candidates'))->with('success', 'Candidate deleted successfully.');
+    }
+    // Update a candidate
+    public function updateCandidate($id)
+    {
+        // Prepare the data to update
+        $data = [
+            'candidate_first_name' => $this->request->getPost('candidate_first_name'),
+            'candidate_last_name' => $this->request->getPost('candidate_last_name'),
+            'candidate_position' => $this->request->getPost('candidate_position'),
+            'election_id' => $this->request->getPost('election_id'),
+        ];
+
+        // Update the candidate in the CandidatesModel with where clause
+        $this->candidatesModel->where('candidate_id', $id)->update($id, $data);
+
+        return redirect()->to(base_url('/candidates'))->with('success', 'Candidate updated successfully.');
     }
 
 }

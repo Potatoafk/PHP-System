@@ -14,7 +14,7 @@
     <div class="modal fade" id="addCandidateModal" tabindex="-1" aria-labelledby="addCandidateModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="<?= base_url('admin/candidates/add') ?>" method="post">
+                <form method="post" action="<?= base_url('candidates/add') ?>">
                     <div class="modal-header">
                         <h5 class="modal-title" id="addCandidateModalLabel">Add New Candidate</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -58,47 +58,7 @@
             <div class="table-stats">Total: <?= count($candidates) ?> candidates</div>
         </div>
 
-        <!-- Edit Candidate Modal -->
-        <div class="modal fade" id="editCandidateModal" tabindex="-1" aria-labelledby="editCandidateModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form action="<?= base_url('admin/candidates/update') ?>" method="post">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="editCandidateModalLabel">Edit Candidate</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <input type="hidden" name="candidate_id" id="edit_candidate_id">
-                            <div class="mb-3">
-                                <label for="edit_firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="edit_firstName" name="candidate_first_name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="edit_lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="edit_lastName" name="candidate_last_name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="edit_position" class="form-label">Position</label>
-                                <input type="text" class="form-control" id="edit_position" name="candidate_position" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="edit_election" class="form-label">Election</label>
-                                <select class="form-select" id="edit_election" name="election_id" required>
-                                    <option value="">Select Election</option>
-                                    <?php foreach($elections as $election): ?>
-                                    <option value="<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Update Candidate</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
 
         <table>
             <thead>
@@ -125,6 +85,48 @@
                     <a href="/candidate/delete/<?= $candidate['candidate_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
+
+                <!-- Edit Candidate Modal -->
+                 <div class="modal fade" id="editCandidateModal" tabindex="-1" aria-labelledby="editCandidateModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form method="post" action="<?= base_url('candidates/update/' . $candidate['candidate_id']) ?>">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="editCandidateModalLabel">Edit Candidate</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="candidate_id" id="edit_candidate_id">
+                                    <div class="mb-3">
+                                        <label for="edit_firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="edit_firstName" name="candidate_first_name" value="<?=esc($candidate['candidate_first_name']) ?>" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit_lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="edit_lastName" name="candidate_last_name" value="<?=esc($candidate['candidate_last_name']) ?>" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit_position" class="form-label">Position</label>
+                                        <input type="text" class="form-control" id="edit_position" name="candidate_position" value="<?=esc($candidate['candidate_position']) ?>" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit_election" class="form-label">Election</label>
+                                        <select class="form-select" id="edit_election" name="election_id" required>
+                                            <option value="">Select Election</option>
+                                            <?php foreach($elections as $election): ?>
+                                            <option value="<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Update Candidate</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <?php endforeach; ?>
             <?php endif; ?>
             </tbody>
