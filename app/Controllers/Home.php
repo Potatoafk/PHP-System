@@ -66,4 +66,31 @@ class Home extends BaseController
 
         return view('user/user_page', $data); // Load the user page view
     }
+
+    public function vote_logic() 
+    {
+        $user_id = session()->get('user_id');
+        $election_id = $this->request->getPost('election_id');
+        $candidates = [
+            'president' => $this->request->getPost('president'),
+            'vice_president' => $this->request->getPost('vice_president'),
+            'secretary' => $this->request->getPost('secretary'),
+            'treasurer' => $this->request->getPost('treasurer'),
+            'auditor' => $this->request->getPost('auditor')
+        ];
+
+        foreach ($candidates as $candidate_id) {
+            $this->votesModel->insert([
+                'candidate_id' => $candidate_id,
+                'user_id' => $user_id,
+                'election_id' => $election_id
+            ]);
+        }
+        return redirect()->to(base_url('/user-page'))->with('message', ['success' => 'Successfully voted! Thank you']);
+    }
+
+    // public function get_votes_by_election() {
+    //     $this->votesModel->select('count(*) vote_count')
+    //             ->
+    // }
 }

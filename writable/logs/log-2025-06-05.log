@@ -1,0 +1,286 @@
+CRITICAL - 2025-06-05 06:01:29 --> TypeError: log_message(): Argument #1 ($level) must be of type string, array given, called in C:\Users\Jay R\projects\not-mine\test voting system\app\Controllers\AdminController.php on line 168
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Common.php on line 774.
+ 1 APPPATH\Controllers\AdminController.php(168): log_message([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 06:01:32 --> TypeError: log_message(): Argument #1 ($level) must be of type string, array given, called in C:\Users\Jay R\projects\not-mine\test voting system\app\Controllers\AdminController.php on line 168
+[Method: GET, Route: candidates]
+in SYSTEMPATH\Common.php on line 774.
+ 1 APPPATH\Controllers\AdminController.php(168): log_message([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->candidates()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+DEBUG - 2025-06-05 06:01:50 --> [{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:02:17 --> [{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:02:40 --> {"candidate_first_name":"Deo","candidate_last_name":"Jabagat","candidate_position":"President","election_id":"1"}
+DEBUG - 2025-06-05 06:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:02:40 --> [{"candidate_id":"15","candidate_first_name":"Deo","candidate_last_name":"Jabagat","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:06:35 --> [{"candidate_id":"15","candidate_first_name":"Deo","candidate_last_name":"Jabagat","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:06:55 --> [{"candidate_id":"15","candidate_first_name":"Deo Seth","candidate_last_name":"Jabagat","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:07:03 --> [{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:07:24 --> [{"candidate_id":"10","candidate_first_name":"Susan","candidate_last_name":"Martin","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"9","candidate_first_name":"Charles","candidate_last_name":"Wilson","candidate_position":"Auditor","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"8","candidate_first_name":"Elizabeth ","candidate_last_name":"Miller","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"7","candidate_first_name":"Richard","candidate_last_name":"Davis","candidate_position":"Treasurer","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"6","candidate_first_name":"Emily ","candidate_last_name":"Taylor","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"5","candidate_first_name":"Thomas ","candidate_last_name":"Anderson","candidate_position":"Secretary","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"4","candidate_first_name":"Sarah","candidate_last_name":"Wilson","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"3","candidate_first_name":"Michael ","candidate_last_name":"Brown","candidate_position":"Vice-President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"2","candidate_first_name":"Jane","candidate_last_name":"Doe","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"},{"candidate_id":"1","candidate_first_name":"John ","candidate_last_name":"Smith","candidate_position":"President","election_id":"1","election_title":"Presidential Election 2025"}]
+DEBUG - 2025-06-05 06:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 06:49:10 --> ErrorException: Undefined variable $message
+[Method: GET, Route: user-page]
+in APPPATH\Views\user\user_page.php on line 13.
+ 1 APPPATH\Views\user\user_page.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\app\\Views\\user\\user_page.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\app\\Views\\user\\user_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/user_page', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('user/user_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->user_page()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+DEBUG - 2025-06-05 06:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 06:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 07:20:35 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:06 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:07 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:08 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:08 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:09 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:09 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:09 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:09 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:22:09 --> CodeIgniter\Filters\Exceptions\FilterException: "user" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('user')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+DEBUG - 2025-06-05 07:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 07:24:06 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:24:07 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:24:24 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:24:25 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:24:25 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:24:26 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 842.
+ 1 SYSTEMPATH\Filters\Filters.php(842): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(487): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(218): CodeIgniter\Filters\Filters->initialize('user-page')
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:26:56 --> Error: Class "App\Filters\AuthFilter" not found
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+CRITICAL - 2025-06-05 07:26:58 --> Error: Class "App\Filters\AuthFilter" not found
+[Method: GET, Route: user-page]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('user-page', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Jay R\\projects\\not-mine\\test voting system\\public\\index.php')
+DEBUG - 2025-06-05 07:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-05 07:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
