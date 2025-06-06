@@ -158,10 +158,14 @@ class AdminController extends BaseController
     public function candidates()
     {
         // Fetch all candidates from the CandidatesModel
-        $candidates = $this->candidatesModel->orderBy('candidate_id', 'DESC')->findAll();
+        $candidates = $this->candidatesModel->select('candidates_table.*, election_table.election_title, election_table.election_id')
+                    ->join('election_table', 'candidates_table.election_id = election_table.election_id')
+                    ->orderBy('candidate_id', 'DESC')
+                    ->findAll();
 
         // Fetch all elections to populate the dropdown in the view
         $elections = $this->electionModel->findAll();
+        log_message('debug', json_encode($candidates));
         $data = [
             'title' => 'Candidates Management',
             'candidates' => $candidates,
@@ -180,6 +184,7 @@ class AdminController extends BaseController
             'candidate_position' => $this->request->getPost('candidate_position'),
             'election_id' => $this->request->getPost('election_id'),
         ];
+        log_message('debug', json_encode($data));
 
         // Insert the new candidate into the CandidatesModel
         $this->candidatesModel->insert($data);

@@ -10,6 +10,9 @@
         </div>
 
         <!-- Active Elections Section -->
+         <?php if (isset($message)) { ?>
+            <div class="alert alert-success"><?= $message['success'] ?? '' ?></div>
+         <?php } ?>
 
         <h2 class="mb-4">Active Elections</h2>
         <div class="row">
@@ -51,10 +54,11 @@
                             </div>
 
                             <form method="post" action="<?= base_url('/user-page') ?>">
+                                <input type="hidden" value="<?= $election['election_id'] ?>" name="election_id">
                                 <!-- President Position -->
                                 <div class="form-group">
                                     <label for="mayor"><strong>President</strong></label>
-                                    <select class="form-control" id="mayor">
+                                    <select class="form-control" id="mayor" name="president">
                                         <option selected disabled>Select a candidate</option>
                                         <?php foreach ($president as $PRESIDENT): ?>
                                             <?php if ($PRESIDENT['election_id'] == $election['election_id']): ?>
@@ -70,7 +74,7 @@
                                 <!-- Vice-President Position -->
                                 <div class="form-group">
                                     <label for="cityCouncil"><strong>Vice-President</strong></label>
-                                    <select class="form-control" id="cityCouncil">
+                                    <select class="form-control" id="cityCouncil" name="vice_president">
                                         <option selected disabled>Select a candidate</option>
                                         <?php foreach ($vice_president as $VICE_PRESIDENT): ?>
                                             <?php if ($VICE_PRESIDENT['election_id'] == $election['election_id']): ?>
@@ -86,7 +90,7 @@
                                 <!-- Secretary Position -->
                                 <div class="form-group">
                                     <label for="treasurer"><strong>Secretary</strong></label>
-                                    <select class="form-control" id="treasurer">
+                                    <select class="form-control" id="treasurer" name="secretary">
                                         <option selected disabled>Select a candidate</option>
                                         <?php foreach ($secretary as $SECRETARY): ?>
                                             <?php if ($SECRETARY['election_id'] == $election['election_id']): ?>
@@ -102,7 +106,7 @@
                                 <!-- Treasurer Position -->
                                 <div class="form-group">
                                     <label for="schoolBoard"><strong>Treasurer</strong></label>
-                                    <select class="form-control" id="schoolBoard">
+                                    <select class="form-control" id="schoolBoard" name="treasurer">
                                         <option selected disabled>Select a candidate</option>
                                         <?php foreach ($treasurer as $TREASURER): ?>
                                             <?php if ($TREASURER['election_id'] == $election['election_id']): ?>
@@ -118,7 +122,7 @@
                                 <!-- Auditor Position -->
                                 <div class="form-group">
                                     <label for="schoolBoard"><strong>Auditor</strong></label>
-                                    <select class="form-control" id="schoolBoard">
+                                    <select class="form-control" id="schoolBoard" name="auditor">
                                         <option selected disabled>Select a candidate</option>
                                         <?php foreach ($auditor as $AUDITOR): ?>
                                             <?php if ($AUDITOR['election_id'] == $election['election_id']): ?>

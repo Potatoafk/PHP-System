@@ -36,6 +36,8 @@ $routes->post('/user-page', 'Home::vote_logic'); // Route for voting action
 // Admin Routes
 $routes->get('/admin', 'AuthController::admin_login'); // Admin dashboard route
 $routes->post('/admin/login', 'AuthController::process_admin_login'); // Admin login processing route
+
+
 $routes->get('/management', 'AdminController::management');
 
 $routes->get('/voters', 'AdminController::voters');

@@ -34,6 +34,8 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'auth'          => \App\Filters\AuthFilter::class,
+        'admin'         => \App\Filters\AdminFilter::class,
     ];
 
     /**
@@ -103,5 +105,21 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+        'auth' => [
+            'before' => [
+                'user-page', // User page access
+                'vote-logic', // Voting logic
+            ],
+        ],
+        'admin' => [
+            'before' => [
+                'management', // Admin management page
+                'voters', // Voter management
+                'results', // Election results
+                'candidates', // Candidate management
+                'elections', // Election management
+            ],
+        ],
+    ];
 }
