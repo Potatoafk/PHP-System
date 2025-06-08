@@ -12,6 +12,7 @@ class CandidatesModel extends Model
         'candidate_first_name',
         'candidate_last_name',
         'candidate_position',
+        'election_id',
     ];
 
     public function getCandidatesByPosition($position)

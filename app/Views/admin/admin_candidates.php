@@ -79,7 +79,7 @@
                 <tr>
                     <td><?= esc($candidate['candidate_first_name']) ?> <?=esc($candidate['candidate_last_name']) ?> </td>
                     <td><?= esc($candidate['candidate_position']) ?></td>
-                    <td><?= esc($candidate['election_id']) ?></td>
+                    <td><?= esc($candidate['election_title']) ?></td>
                     <td>
                     <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editCandidateModal">Edit</button>
                     <a href="/candidate/delete/<?= $candidate['candidate_id'] ?>" class="btn btn-danger btn-sm">Delete</a>
@@ -111,10 +111,11 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="edit_election" class="form-label">Election</label>
+                                        <?php $current_election_id = $election['election_id']; ?>
                                         <select class="form-select" id="edit_election" name="election_id" required>
                                             <option value="">Select Election</option>
                                             <?php foreach($elections as $election): ?>
-                                            <option value="<?= $election['election_id'] ?>"><?= esc($election['election_title']) ?></option>
+                                            <option value="<?= $election['election_id'] ?>" <?= ($current_election_id === $election['election_id'])? 'selected': '' ?>><?= esc($election['election_title']) ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
