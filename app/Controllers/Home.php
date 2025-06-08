@@ -84,6 +84,16 @@ class Home extends BaseController
     {
         $user_id = session()->get('user_id');
         $election_id = $this->request->getPost('election_id');
+
+        $allReadyVoted = $this->votesModel
+            ->where('user_id', $user_id)
+            ->where('election_id', $election_id)
+            ->countAllResults();
+
+        if ($allReadyVoted > 0) {
+            return redirect()->to(base_url('/user-page'))->with('message', ['error' => 'You have already voted in this election.']);
+        }
+
         $candidates = [
             'president' => $this->request->getPost('president'),
             'vice_president' => $this->request->getPost('vice_president'),

@@ -204,7 +204,6 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3 profile-img" alt="Profile Picture">
                         <h4 class="font-weight-bold"><?= esc($user['first_name']) ?> <?= esc($user['last_name']) ?></h4>
                     </div>
 
