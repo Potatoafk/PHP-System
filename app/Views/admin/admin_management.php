@@ -35,7 +35,7 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3><?= count($elections) ?></h3>
+                            <h3>1</h3>
                             <p>No. of Election</p>
                         </div>
                         <div class="icon">
@@ -54,7 +54,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="fas fa-chart-pie mr-1"></i>
-                                Latest Election Updates
+                                Latest Election Updates ( <?= $elections['election_title'] ?> )
                             </h3>
                         </div>
                         <div class="card-body">
@@ -68,31 +68,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($results as $result): ?>
                                         <tr>
-                                            <td>President</td>
-                                            <td>John Smith</td>
-                                            <td>150</td>
+                                            <td class="align-middle font-weight-bold"><?= $result['candidate_position'] ?></td>
+                                            <td class="align-middle"><?= $result['candidate_first_name'] . ' ' . $result['candidate_last_name'] ?></td>
+                                            <td class="align-middle">
+                                                <span class="badge badge-info"><?= $result['vote_count'] ?></span>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <td>Vice President</td>
-                                            <td>Mary Johnson</td>
-                                            <td>120</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Secretary</td>
-                                            <td>Robert Brown</td>
-                                            <td>90</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Auditor</td>
-                                            <td>James Reid</td>
-                                            <td>23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Treasurer</td>
-                                            <td>John Ivan</td>
-                                            <td>34</td>
-                                        </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

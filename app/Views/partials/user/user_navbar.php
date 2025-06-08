@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<?= base_url('/user-page') ?>">
                 <i class="fas fa-vote-yea mr-2"></i>
                 Voter Portal
             </a>

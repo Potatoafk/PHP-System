@@ -315,13 +315,25 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="stat-item">
-                        <div class="stat-number">60 temp</div>
+                        <div class="stat-number">
+                            <?php // Count registered voters from the users table
+                            use App\Models\UserModel;
+                            $userModel = new UserModel();
+                            echo $userModel->countAll();
+                            ?>
+                        </div>
                         <div class="stat-label">Registered Voters</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="stat-item">
-                        <div class="stat-number">250+</div>
+                        <div class="stat-number">
+                            <?php // Count elections from the elections table
+                            use App\Models\ElectionModel;
+                            $electionModel = new ElectionModel();
+                            echo $electionModel->countAll();
+                            ?>
+                        </div>
                         <div class="stat-label">Elections Conducted</div>
                     </div>
                 </div>
@@ -386,76 +398,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="container my-5">
-        <h2 class="text-center mb-5">What Voters Say</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="mb-3 text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="card-text">"The digital voting system made it so easy to participate in our local
-                            election. I was able to vote from home during my lunch break!"</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <div>
-                                <h6 class="mb-0">Sample Voter 1</h6>
-                                <small class="text-muted">Registered Voter</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="mb-3 text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="card-text">"As someone with mobility issues, this system has been a game-changer. I no
-                            longer have to worry about transportation to polling stations."</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <div>
-                                <h6 class="mb-0">Sample Voter 2</h6>
-                                <small class="text-muted">Registered Voter</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="mb-3 text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="card-text">"I was skeptical at first, but the security measures and verification steps
-                            gave me confidence that my vote was secure and counted correctly."</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <div>
-                                <h6 class="mb-0">Sample Voter 3</h6>
-                                <small class="text-muted">Registered Voter</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -464,33 +406,22 @@
                     <h5 class="mb-3 text-white">Digital Voting System</h5>
                     <p>Making democracy accessible to everyone through secure, convenient digital voting solutions.</p>
                     <div class="mt-3">
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="<?= base_url('/') ?>" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="<?= base_url('/') ?>" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="<?= base_url('/') ?>" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="<?= base_url('/') ?>" class="social-icon"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-4">
-                    <h5 class="mb-3 text-white">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="footer-link">Home</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Elections</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Results</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">About Us</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-4 mb-4">
                     <h5 class="mb-3 text-white">Support</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="footer-link">Help Center</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">FAQs</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Terms of Service</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Security Information</a></li>
+                        <li class="mb-2"><a href="<?= base_url('/') ?>" class="footer-link">Help Center</a></li>
+                        <li class="mb-2"><a href="<?= base_url('/') ?>" class="footer-link">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="<?= base_url('/') ?>" class="footer-link">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-4 mb-4">
                     <h5 class="mb-3 text-white">Contact Us</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Democracy Ave, Cityville</li>
@@ -505,6 +436,46 @@
             </div>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy & Terms and Conditions</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                    <h4>Terms and Conditions</h4>
+                    <p>Welcome to the Digital Voting System. By accessing or using our website and services, you agree to be bound by the following terms and conditions. Please read them carefully before using the platform.</p>
+                    <ol>
+                        <li><strong>Eligibility:</strong> You must be a registered voter and meet all legal requirements to participate in any election conducted through this platform.</li>
+                        <li><strong>Account Security:</strong> You are responsible for maintaining the confidentiality of your account credentials. Any activity under your account is your responsibility.</li>
+                        <li><strong>Voting Process:</strong> Each eligible voter is allowed to cast one vote per election. Any attempt to manipulate or tamper with the voting process is strictly prohibited and may result in legal action.</li>
+                        <li><strong>Data Privacy:</strong> We are committed to protecting your personal information. All data collected is used solely for the purpose of conducting secure and transparent elections. We do not sell or share your data with third parties except as required by law.</li>
+                        <li><strong>System Availability:</strong> While we strive to provide 24/7 access, we do not guarantee uninterrupted service. Scheduled maintenance or unforeseen technical issues may temporarily affect availability.</li>
+                        <li><strong>Intellectual Property:</strong> All content, trademarks, and software on this site are the property of the Digital Voting System and may not be used without permission.</li>
+                        <li><strong>Prohibited Conduct:</strong> Users must not engage in any activity that could harm the integrity, security, or reputation of the platform, including but not limited to hacking, spreading malware, or submitting false information.</li>
+                        <li><strong>Changes to Terms:</strong> We reserve the right to update these terms and conditions at any time. Continued use of the platform constitutes acceptance of any changes.</li>
+                        <li><strong>Governing Law:</strong> These terms are governed by the laws of the applicable jurisdiction. Any disputes will be resolved in accordance with local laws.</li>
+                    </ol>
+                    <h4>Privacy Policy</h4>
+                    <p>Your privacy is important to us. This policy explains how we collect, use, and protect your information:</p>
+                    <ul>
+                        <li>We collect personal data such as your name, contact information, and voting activity solely for election purposes.</li>
+                        <li>All data is stored securely and access is restricted to authorized personnel only.</li>
+                        <li>We use industry-standard encryption and security measures to protect your information.</li>
+                        <li>We do not share your personal data with third parties except as required by law or with your explicit consent.</li>
+                        <li>You have the right to access, correct, or request deletion of your personal data by contacting our support team.</li>
+                    </ul>
+                    <p>By using this website, you acknowledge that you have read, understood, and agree to our Terms and Conditions and Privacy Policy.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

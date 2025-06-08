@@ -9,16 +9,16 @@
                 <div class="col-md-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Help Center</a></li>
-                        <li><a href="#" class="text-white">Contact Support</a></li>
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="<?= base_url('/user-page') ?>" class="text-white">Help Center</a></li>
+                        <li><a href="<?= base_url('/user-page') ?>" class="text-white">Contact Support</a></li>
+                        <li><a href="<?= base_url('/user-page') ?>" class="text-white">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h5>Contact</h5>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-envelope mr-2"></i> support@voterportal.com</li>
-                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-phone mr-2"></i> +63 887 232 0916</li>
                     </ul>
                 </div>
             </div>

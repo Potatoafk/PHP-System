@@ -13,6 +13,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <link rel="stylesheet" href="<?= base_url('css/custom.css') ?>">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

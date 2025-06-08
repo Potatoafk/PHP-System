@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\UserModel;
 use App\Models\ElectionModel;
 use App\Models\CandidatesModel;
+use App\Models\VotesModel;
 
 
 
@@ -21,6 +22,7 @@ class AdminController extends BaseController
         $this->userModel = new UserModel();
         $this->electionModel = new ElectionModel();
         $this->candidatesModel = new CandidatesModel();
+        $this->voteModel = new VotesModel();
     }
 
 
@@ -29,12 +31,18 @@ class AdminController extends BaseController
     {
 
         $voters = $this->userModel->findAll();
-        $elections = $this->electionModel->findall();
+        $elections = $this->electionModel->orderBy('election_id', 'DESC')->first();
+        $results = $this->voteModel->select('votes_table.*, candidates_table.*, count(*) as vote_count')
+                    ->join('candidates_table', 'votes_table.candidate_id = candidates_table.candidate_id')
+                    ->where('candidates_table.election_id', $elections['election_id'])
+                    ->groupBy('votes_table.candidate_id')
+                    ->findAll();
 
         $data = [
             'title' => 'Admin Dashboard',
             'voters' => $voters,
             'elections' => $elections,
+            'results' => $results,
         ];
 
         return view('admin/admin_management', $data); // Load the admin dashboard view
@@ -85,12 +93,26 @@ class AdminController extends BaseController
     public function results()
     {
         $elections = $this->electionModel->orderBy('election_id', 'DESC')->findAll();
+
+        $allResults = [];
+        foreach ($elections as $election) {
+            $results = $this->voteModel
+                ->select('candidates_table.candidate_id, candidates_table.candidate_first_name, candidates_table.candidate_last_name, candidates_table.candidate_position, COUNT(*) as vote_count')
+                ->join('candidates_table', 'votes_table.candidate_id = candidates_table.candidate_id')
+                ->where('candidates_table.election_id', $election['election_id'])
+                ->groupBy('votes_table.candidate_id')
+                ->findAll();
+
+            $allResults[$election['election_id']] = $results;
+        }
+
         $data = [
             'title' => 'Election Results',
-            'elections' => $elections
+            'elections' => $elections,
+            'results' => $allResults
         ];
 
-        return view('admin/admin_results', $data); // Load the election results view
+        return view('admin/admin_results', $data);
     }
 
 

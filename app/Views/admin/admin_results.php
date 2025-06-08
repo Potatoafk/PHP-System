@@ -9,7 +9,7 @@
     <div class="results-table">
         <div class="table-header">
             <div class="table-title">Election Results</div>
-            <div class="table-stats">Total Votes: 44</div>
+            <div class="table-stats">Total Elections: <?= esc(count($elections)) ?></div>
         </div>
 
         <table>
@@ -40,27 +40,20 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="results-list">
-                                            <div class="president">
-                                                <h5>President: John Smith</h5>
-                                                <small>Total Votes: 156 (45%)</small>
-                                            </div>
-                                            <hr>
-                                            <div class="vice-president">
-                                                <h5>Vice President: Jane Doe</h5>
-                                                <small>Total Votes: 156 (45%)</small>
-                                            <hr>
-                                            <div class="secretary">
-                                                <h5>Secretary: Jane Doe</h5>
-                                                <small>Total Votes: 156 (45%)</small>
-                                            <hr>
-                                            <div class="treasurer">
-                                                <h5>Treasurer: Jane Doe</h5>
-                                                <small>Total Votes: 156 (45%)</small>
-                                            <hr>
-                                            <div class="auditor">
-                                                <h5>Auditor: Jane Doe</h5>
-                                                <small>Total Votes: 156 (45%)</small>
-                                            <hr>
+                                            <?php if (!empty($results[$election['election_id']])): ?>
+                                                <?php foreach ($results[$election['election_id']] as $result): ?>
+                                                    <div class="candidate-result">
+                                                        <h5 class="text-dark fw-bold">
+                                                            <?= esc($result['candidate_position']) ?>:
+                                                            <?= esc($result['candidate_first_name']) ?> <?= esc($result['candidate_last_name']) ?>
+                                                        </h5>
+                                                        <small>Total Votes: <?= esc($result['vote_count']) ?></small>
+                                                    </div>
+                                                    <hr>
+                                                <?php endforeach; ?>
+                                            <?php else: ?>
+                                                <div>No votes recorded for this election yet.</div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                     <div class="modal-footer">

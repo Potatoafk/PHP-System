@@ -84,6 +84,14 @@ class AuthController extends BaseController
 
 
 
+
+
+
+
+
+
+
+
     public function admin_login()
     {
         return view('auth/admin_login', [
@@ -96,6 +104,8 @@ class AuthController extends BaseController
         $password = $this->request->getPost('password');
         $admin = $this->adminModel->where('username', $username)->first();
 
+        // log_message('debug', 'Admin login attempt with username: ' . $username);
+
         if ($admin && password_verify($password, $admin['password'])) {
             // Start session and store admin data
             $session = session();
@@ -104,8 +114,18 @@ class AuthController extends BaseController
                 'username' => $admin['username'],
             ]);
 
+            // log_message('debug', 'Admin ID from session: ' . $admin['admin_id']);
+
             return redirect()->to(base_url('/management'))->with('success', 'Login successful');
         }
         return redirect()->back()->with('error', 'Invalid credentials');
+    }
+
+    public function admin_logout()
+    {
+        $session = session();
+        $session->destroy(); // Destroy the session to log out the admin
+
+        return redirect()->to(base_url('/admin'))->with('success', 'Logged out successfully');
     }
 }

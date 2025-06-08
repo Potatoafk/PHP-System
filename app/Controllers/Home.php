@@ -49,6 +49,17 @@ class Home extends BaseController
         $treasurer = $this->candidatesModel->getCandidatesByPosition('Treasurer');
         $auditor = $this->candidatesModel->getCandidatesByPosition('Auditor');
 
+        // Get election results for each election
+        $results = [];
+        foreach ($elections as $election) {
+            $results[$election['election_id']] = $this->votesModel
+                ->select('candidates_table.candidate_id, candidates_table.candidate_first_name, candidates_table.candidate_last_name, candidates_table.candidate_position, COUNT(*) as vote_count')
+                ->join('candidates_table', 'votes_table.candidate_id = candidates_table.candidate_id')
+                ->where('candidates_table.election_id', $election['election_id'])
+                ->groupBy('votes_table.candidate_id')
+                ->findAll();
+        }
+
         $data = [
             'user' => $user,
 
@@ -60,6 +71,8 @@ class Home extends BaseController
             'treasurer' => $treasurer,
             'auditor' => $auditor,
 
+            'results' => $results,
+
             // Title for the page
             'title' => 'User Page'
         ];
@@ -67,7 +80,7 @@ class Home extends BaseController
         return view('user/user_page', $data); // Load the user page view
     }
 
-    public function vote_logic() 
+    public function vote_logic()
     {
         $user_id = session()->get('user_id');
         $election_id = $this->request->getPost('election_id');
@@ -89,8 +102,20 @@ class Home extends BaseController
         return redirect()->to(base_url('/user-page'))->with('message', ['success' => 'Successfully voted! Thank you']);
     }
 
-    // public function get_votes_by_election() {
-    //     $this->votesModel->select('count(*) vote_count')
-    //             ->
-    // }
+    public function updateProfile()
+    {
+        $user_id = session()->get('user_id');
+        $data = [
+            'first_name' => $this->request->getPost('first_name'),
+            'last_name' => $this->request->getPost('last_name'),
+            'email' => $this->request->getPost('email'),
+            'phone_no' => $this->request->getPost('phone_no'),
+        ];
+
+        if ($this->userModel->update($user_id, $data)) {
+            return redirect()->to(base_url('/user-page'))->with('message', ['success' => 'Profile updated successfully!']);
+        } else {
+            return redirect()->to(base_url('/user-page'))->with('message', ['error' => 'Failed to update profile.']);
+        }
+    }
 }
